@@ -1,19 +1,20 @@
 <div class="pt_banner">
-	<h1 class="pt_heading">Events</h1>
+	<h1 class="pt_heading"><?=preg_replace('/\s([A-z\s]+)/',' <strong>$1</strong>',ucwords(preg_replace('/_|\-/',' ',$this->uri->segment(1, 'undefined'))))?></h1>
 	<div class="speedbar">
 		<nav>
 			<ul>
-				<li><a href="#">Back to Homepage</a></li>
+				<li><a href="/">Back to Homepage</a></li>
+			{{navigation:links group_segment="1" class="current"}}
                 <li>l</li>
-                <li><a href="#">Upcoming Events</a></li>
-                <li>l</li>
-                <li><a href="#">Third-party Events</a></li>
+				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>	
+			{{/navigation:links}}
+			
             </ul>
 		</nav>
 	</div>
 </div>
 
 <section class="post clearfix">
-    {{ template:body }}
+    {{template:body}}
 </section>
     
