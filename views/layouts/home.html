@@ -8,53 +8,46 @@
 	{{ template:metadata in="body" }}
 <div class="container">
 <div class="grid">
-  <div class="content">
+	<div class="content">
   
-     {{ theme:partial name="header" }}
-     
-     <div class="inner_body">
-    	<div class="banner"> </div>
+	{{ theme:partial name="header" }}
+	
+	<div class="inner_body">
+    <div class="banner"> </div>
+    	
     <h1 class="hp_heading">Calendar of Events</h1>
+    
     <div class="hp_cal">
-      <div class="hp_cal_box1">
-        <div class="hp_cal_date">
-            <div class="hp_cal_month">Dec</div>
-            <div class="hp_cal_day">15</div>
-        </div>
-        <div class="hp_cal_detail">
-            "Breast Cancer 
-Awareness Month"
-        <a href="#"><div class="find_out_more_btn">Find out more</div></a>	
-        </div>
-      </div>
-      <div class="hp_cal_box1">
-        <div class="hp_cal_date">
-            <div class="hp_cal_month_dis">Dec</div>
-            <div class="hp_cal_day_dis">15</div>
-        </div>
-        <div class="hp_cal_detail">
-            "Breast Cancer 
-Awareness Month"
-        <a href="#"><div class="find_out_more_dis_btn">Find out more</div></a>	
-        </div>
-      </div>
-      <div class="hp_cal_box1">
-        <div class="hp_cal_date">
-            <div class="hp_cal_month_dis">Dec</div>
-            <div class="hp_cal_day_dis">15</div>
-        </div>
-        <div class="hp_cal_detail">
-            "Breast Cancer 
-Awareness Month"
-        <a href="#"><div class="find_out_more_dis_btn">Find out more</div></a>	
-        </div>
-      </div>
-      <div class="hp_cal_newsletter">
-        <div class="hp_cal_input">
-        <input name="newsletter" type="text" value="newsletter" class="hp_cal_text" /><a href="#">{{ theme:image file="signup_btn.jpg" width="67" height="28" alt="newsletter signup"}}</a>
-        </div>
-      </div>
+      
+		{{ event:get from="<?=strtotime('today')?>" limit="3"}}
+		<div class="hp_cal_box">
+			<div class="hp_cal_date">
+				<div class="hp_cal_month">{{ helper:date format="M" timestamp="{{timestamp}}"}}</div>
+					<div class="hp_cal_day">{{ helper:date format="d" timestamp="{{timestamp}}"}}</div>
+				</div>
+				<div class="hp_cal_detail">
+					{{name}}
+					<a href="<?=base_url()?>event/details/{{id}}" class="normal_btn"><span>Find out more</span></a>
+				</div>
+		</div>
+		{{ /event:get}}
+		
+		<script>
+			jQuery('.hp_cal_box').mouseenter(function(){
+				jQuery(this).addClass('over');
+			});
+			jQuery('.hp_cal_box').mouseleave(function(){
+				jQuery(this).removeClass('over');
+			});
+		</script>
+		
+		<div class="hp_cal_newsletter">
+			<div class="hp_cal_input">
+				<input name="newsletter" type="text" value="newsletter" class="hp_cal_text" /><a href="#">{{ theme:image file="signup_btn.jpg" width="67" height="28" alt="newsletter signup"}}</a>
+			</div>
+		</div>
     </div>
+    
     <div class="hp_boxes">
         <div class="hp_box" style="margin-left:0px">
             <div class="hp_box_text1">
