@@ -49,10 +49,26 @@ a:hover, a:active, a:focus {
 	height:155px;
 	position:relative
 	}
+
+/** Default Theme **/
 .logo{
 	position:absolute;
-	top:71px
+	top:61px;
 }
+
+.logo a{
+	display:block;
+	width:220px;
+	height:84px;
+	background:url('../img/dchf_header_logo.png');
+}
+
+.logo a span{
+	display:block;
+	overflow:hidden;
+	text-indent:-999px;
+}
+
 .r_part{
 	position:absolute;
 	top:22px;
