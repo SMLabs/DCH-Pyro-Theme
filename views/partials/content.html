@@ -1,9 +1,30 @@
+<?php
+	$slug = $this->uri->segment(1, 'undefined');
+	$parts = preg_split('/_|-/', $slug);
+	$total = count($parts);
+	$half = floor($total*.5);
+	$i = 0;
+	$section = '';
+	
+	foreach($parts as $part){
+		(!preg_match('/or|and|to|of|the/',$part)) ? $part = ucwords($part) : null;
+		($total>1 AND $i==$half) ? $section .= '<strong>' : null;
+		$section .= ($total>1 AND $i>0) ? '&nbsp'.$part : $part;
+		$i++;
+	}
+	($total>=1) ? $section .= '</strong>' : null;
+	$section = '';//'<h1 class="pt_heading">'.$section.'</h1>';
+?>
+
 <div class="pt_banner">
-	<h1 class="pt_heading"><?=preg_replace('/\s([A-z\s]+)/',' <strong>$1</strong>',ucwords(preg_replace('/_|\-/',' ',$this->uri->segment(1, 'undefined'))))?></h1>
+	<?=$section?>
+	{{ pages:display slug="<?=$this->uri->segment(1, 'undefined')?>" }}
+	<h3 class="pt_heading">{{title}}</h3>
+	{{ /pages:display }}
 	<div class="speedbar">
 		<nav>
 			<ul>
-				<li><a href="/">Back to Homepage</a></li>
+				<li><a href="<?=site_url()?>">Back to Homepage</a></li>
 			{{navigation:links group_segment="1" class="current"}}
                 <li>l</li>
 				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>	
