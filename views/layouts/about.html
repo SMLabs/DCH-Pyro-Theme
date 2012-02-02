@@ -13,8 +13,24 @@
 			
 				<div class="content">
 					{{ theme:partial name="header" }}
+					
 					<div class="inner_body">
 						<section class="post clearfix">
+							<div class="pt_banner">	
+								<h3 class="pt_heading">About <strong>Us</strong></h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+										{{navigation:links group="about-us"}}
+											<li>l</li>
+											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+										{{/navigation:links}}									
+							            </ul>
+									</nav>
+								</div>
+							</div>
+							
 						    {{template:body}}
 						</section>
 					</div>

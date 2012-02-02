@@ -1,29 +1,3 @@
-<div class="pt_banner">
-	
-<?php if(isset($section)):?>
-	<h3 class="pt_heading"><?=$section?></h3>
-<?php elseif($this->uri->segment(1)=='blog'):?>
-	<h3 class="pt_heading">Blog</h3>
-<?php else:?>
-	{{ pages:display slug="<?=$this->uri->segment(1, 'none')?>" }}
-	<h3 class="pt_heading">{{title}}</h3>
-	{{ /pages:display }}
-<?php endif;?>
-
-	<div class="speedbar">
-		<nav>
-			<ul>
-				<li><a href="<?=site_url()?>">Back to Homepage</a></li>
-			{{navigation:links group="<?=isset($section) ? $section : $this->uri->segment(1)?>"}}
-                <li>l</li>
-				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
-			{{/navigation:links}}
-			
-            </ul>
-		</nav>
-	</div>
-</div>
-
 <section class="post clearfix">
     {{template:body}}
 </section>
