@@ -194,6 +194,13 @@ a:hover, a:active, a:focus {
 	padding-bottom:28px;
 	margin-bottom:40px
 }
+
+.inner_body .postings.last{
+	border-bottom:none;
+	margin-bottom:0px;
+	padding-bottom:10px;
+}
+
 .inner_body .a_date{
 	width:311px;
 	background:url(../img/a_date_end.jpg) no-repeat left bottom;
@@ -607,10 +614,19 @@ section.post h1:after{
 	padding-top:10px;
 	font-size:18pt;
 }
-.pagefooter h2 strong{
-	
-}
+.pagefooter h2 strong{}
 
 .pagefooter a.large_button{
 	float:right;
+}
+
+/** calendar **/
+
+.month-nav{
+	float:right;
+}
+
+.cal-buttons{
+	float:right;
+	width:250px;
 }
