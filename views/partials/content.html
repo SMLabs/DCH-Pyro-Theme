@@ -2,6 +2,8 @@
 	
 <?php if(isset($section)):?>
 	<h3 class="pt_heading"><?=$section?></h3>
+<?php elseif($this->uri->segment(1)=='blog'):?>
+	<h3 class="pt_heading">Blog</h3>
 <?php else:?>
 	{{ pages:display slug="<?=$this->uri->segment(1, 'none')?>" }}
 	<h3 class="pt_heading">{{title}}</h3>
