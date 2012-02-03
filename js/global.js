@@ -14,5 +14,10 @@
 		
 		$('a[target="panel"]').panel({'close':'<a>CLOSE</a>'});
 		
+		$("#send_newsletter_btn").click(function(){
+			$('#Newsletter').submit();
+		});		
+		
 	});
+
 })(jQuery);

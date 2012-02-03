@@ -453,7 +453,8 @@ a:hover, a:active, a:focus {
 .hp_cal_newsletter{
 	background:url(../img/newsletter_signup.jpg) no-repeat;
 	width:285px;
-	height:120px;
+	/*height:120px;*/  /****Off by nauman **/
+	height:113px;
 	float:left;
 }
 
@@ -473,15 +474,18 @@ hp_cal_newsletter form{
 }
 
 .hp_cal_input{
-	margin:67px 0 0 35px;
+	/*margin:67px 0 0 35px;*/ /****Off by nauman **/
+	margin:24px 0 0 31px;
 }
 
 
 .hp_cal_text{
+	float:left;
 	border:0;
 	color:#999;
 	height:27px;
-	padding:0px 5px;
+	line-height:24px;
+	padding:0px 5px
 }
 
 .hp_box{
@@ -838,4 +842,30 @@ a.cal-button:hover span{
 #Panel img.solo{
 	max-width:120000%;
 	border-radius:10px;
+}
+
+.hp_cal_text01{
+	margin:8px 0px 10px 18px;
+	font-size:18pt;
+	color: #FFF;
+	text-shadow: #003a57 0px 1px 2px;
+}
+
+.nl_button{
+	width:56px;
+	height:22px;
+	background-color:#bee3f2;
+	box-shadow:0px 1px 0px #DBDEE0, 0px -1px 0px 0px #E2F3F9;
+	float:left;
+	font-size:13px;
+	font-weight:600;
+	text-shadow:1px 1px 0 #eaf9ff;
+	padding:3px 0 0 11px;
+	color:#428cca;
+	margin-top:1px
+}
+.nl_button {
+  *height:24px;
+  *margin-top:0px;
+  cursor:pointer /* IE */
 }
