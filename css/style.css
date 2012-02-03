@@ -210,6 +210,7 @@ a:hover, a:active, a:focus {
 	float:right;
 	width:295px
 }
+
 .buttons a{ text-decoration:none; cursor:pointer}
 .enable_btn a{
 	padding:12px 10px 12px 35px;
@@ -234,76 +235,84 @@ a:hover, a:active, a:focus {
 	margin:0px 2px
 }
 
-.postings{
+.agenda-listing{
 	border-bottom:1px solid #c2dbe5;
-	float:left;
 	padding-bottom:28px;
-	margin-bottom:40px
+	margin-bottom:40px;
+	overflow:hidden;
 }
-
-.postings.last{
+.agenda-listing.last{
 	border-bottom:none;
 	margin-bottom:0px;
 	padding-bottom:10px;
 }
 
-.a_date{
+.agenda-date{
 	width:311px;
 	background:url(../img/a_date_end.jpg) no-repeat left bottom;
-	padding-bottom:50px;
-	float:left
+	padding-bottom:23px;
+	float:left;
+	overflow:hidden;
 }
-.day{
+
+.agenda-date-wrapper{
+	width:208px;
+	background:#FFF url(../img/c_icon.jpg) 5px 7px no-repeat;
+	padding:0px 0px 20px 78px;
+	margin-left:0px
+}
+
+.agenda-day{
 	font-size:11pt;
 	color:#7b858e
 }
-.month{
+.agenda-month{
 	font-size:13pt;
 	color:#7b858e;
 	line-height:30px;
 	font-weight:bold;
 }
-.time{
+.agenda-time{
 	font-size:11pt;
 	color:#7aabca;
 	font-weight:bold;
-}
-
-.a_date_text{
-	width:175px;
+	margin-left:-78px;
+	padding-left:78px;
 	border-bottom: 1px solid #c2dbe5;
-	background:url(../img/c_icon.jpg) 0px 0px no-repeat;
-	padding:0px 0px 19px 78px;
-	margin-left:8px
 }
-.a_detail{
+.agenda-details{
 	width:626px;
 	border-left:1px dotted #c9c9c9;
 	padding-left:20px;
-	float:right
+	float:right;
+	overflow:hidden;
+	
 }
-.posting_hdr{
+.agenda-header{
 	font-weight:bold;
 	font-size:13pt;
 	color:#3A7EB7
 }
-.inner_body p,
+.agenda-listing p, .inner_body p,
 .inner_body ul{
 	padding:10px 0px;
 	color:#7b858e;
 	font-size:11pt
 }
-.inner_body .a_detail_text01{
+.agenda-spon-heading, .agenda-view-heading{
 	color:#3A7EB7;
-	font-size:13pt
+	font-size:13pt;
+	margin-top:10px;
 }
-.inner_body .a_detail_text02{
+
+.agenda-spon-list{
 	color:#7b858e;
 	font-size:11pt;
 	font-weight:bold;
 	line-height:30px
 }
-.a_detail_btn{
+
+.agenda-view-buttons{
 	padding:15px 0px
 }
 .orange_btn{
@@ -746,13 +755,13 @@ a.cal-button:hover span{
 	color:#3A7EB7;
 }
 
-#Panel .postings {
+#Panel .agenda-listing {
 	padding:20px;
 	float:none;
 	overflow:hidden;
 }
 
-#Panel .postings .a_detail{
+#Panel .agenda-listing .agenda-details{
 	width:500px;
 }
 
