@@ -74,10 +74,55 @@ a:hover, a:active, a:focus {
 	top:22px;
 	right:7px
 }
-.sm_icons{
+.sm-icons{
 	text-align:right;
-	line-height:18px
+	line-height:18px;
+	overflow:hidden;
+	float:right;
 }
+
+.sm-icons .leadin{
+	font-size:10px;
+	color:#a8cbe0;
+	float:left;
+}
+
+.sm-icons a{
+	width:22px;
+	height:15px;
+	display:block;
+	float:left;
+	padding-left:10px;
+}
+
+.sm-icons a.facebook{
+	width:10px;
+}
+
+.sm-icons a span{
+	display:block;
+	width:22px;
+	height:15px;
+	text-indent:-999em;
+	text-align:left;
+}
+
+.sm-icons a.twitter span{
+	background:transparent url('../img/sprites_01.png') 0 0;
+}
+
+.sm-icons a.twitter:hover span{
+	background-position-x:-22px;
+}
+
+.sm-icons a.facebook span{
+	background:transparent url('../img/sprites_01.png') -100px 0 ;
+}
+
+.sm-icons a.facebook:hover span{
+	background-position-x:-110px;
+}
+
 .top_nav{
 	padding-top:62px;
 }
@@ -577,13 +622,19 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 
 /** page layouts style **/
 
+section{
+	overflow:hidden;
+	padding-bottom:56px;
+	background:url('../img/hr_fade.png') no-repeat bottom center;
+}
+
 section.post h1 strong{
 	font-weight:600;
 }
 
 section.post h1:after{
 	clear:both;
-	content:'  ';
+	content:'';
 	display:block;
 	padding-top:29px;
 	height:29px;
@@ -596,17 +647,12 @@ section.post h1:after{
 	background:url('../img/hr_fade.png') no-repeat top center;
 }
 
-.pagefooter:before, .pagefooter:after{
+.pagefooter:before{
 	clear:both;
 	content:'  ';
 	display:block;
 	height:29px;
 	background:url('../img/hr_fade.png') no-repeat top center;
-}
-
-.pagefooter:after{
-	padding-top:20px;
-	background-position:bottom;
 }
 
 .pagefooter h2{
