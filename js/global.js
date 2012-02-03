@@ -12,5 +12,7 @@
 		}(document, 'script', 'facebook-jssdk'));
 		
 		
+		$('a[target="panel"]').panel({'close':'<a>CLOSE</a>'});
+		
 	});
 })(jQuery);

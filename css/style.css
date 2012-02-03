@@ -181,7 +181,7 @@ a:hover, a:active, a:focus {
 .speedbar li a{
 	color:#315c80;
 	text-decoration:none;
-	font-size:7pt;
+	font-size:8pt;
 	font-weight:600;
 	text-transform:capitalize;
 	padding:0px 10px;
@@ -210,8 +210,8 @@ a:hover, a:active, a:focus {
 	float:right;
 	width:295px
 }
-.inner_body .buttons a{ text-decoration:none; cursor:pointer}
-.inner_body .enable_btn a{
+.buttons a{ text-decoration:none; cursor:pointer}
+.enable_btn a{
 	padding:12px 10px 12px 35px;
 	border:1px solid #dbeaf3;
 	background:url(../img/enable_bullet.jpg) 15px center  no-repeat #FFF;
@@ -233,55 +233,56 @@ a:hover, a:active, a:focus {
 	float:left;
 	margin:0px 2px
 }
-.inner_body .postings{
+
+.postings{
 	border-bottom:1px solid #c2dbe5;
 	float:left;
 	padding-bottom:28px;
 	margin-bottom:40px
 }
 
-.inner_body .postings.last{
+.postings.last{
 	border-bottom:none;
 	margin-bottom:0px;
 	padding-bottom:10px;
 }
 
-.inner_body .a_date{
+.a_date{
 	width:311px;
 	background:url(../img/a_date_end.jpg) no-repeat left bottom;
 	padding-bottom:50px;
 	float:left
 }
-.inner_body .day{
+.day{
 	font-size:11pt;
 	color:#7b858e
 }
-.inner_body .month{
+.month{
 	font-size:13pt;
 	color:#7b858e;
 	line-height:30px;
 	font-weight:bold;
 }
-.inner_body .time{
+.time{
 	font-size:11pt;
 	color:#7aabca;
 	font-weight:bold;
 }
 
-.inner_body .a_date_text{
+.a_date_text{
 	width:175px;
 	border-bottom: 1px solid #c2dbe5;
 	background:url(../img/c_icon.jpg) 0px 0px no-repeat;
 	padding:0px 0px 19px 78px;
 	margin-left:8px
 }
-.inner_body .a_detail{
+.a_detail{
 	width:626px;
 	border-left:1px dotted #c9c9c9;
 	padding-left:20px;
 	float:right
 }
-.inner_body .posting_hdr{
+.posting_hdr{
 	font-weight:bold;
 	font-size:13pt;
 	color:#3A7EB7
@@ -305,7 +306,7 @@ a:hover, a:active, a:focus {
 .a_detail_btn{
 	padding:15px 0px
 }
-.inner_body .orange_btn{
+.orange_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #f3cfb8;
 	background:url(../img/orange_bullet.jpg) 16px center  no-repeat #FFF;
@@ -315,7 +316,7 @@ a:hover, a:active, a:focus {
 	float:left;
 	margin:0px 2px
 }
-.inner_body .facebook_btn{
+.facebook_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #dbeaf3;
 	background:url(../img/enable_bullet.jpg) 16px center  no-repeat #FFF;
@@ -363,7 +364,8 @@ a:hover, a:active, a:focus {
 	font-size:8pt;
 	line-height:13px
 }
-.inner_body .banner{
+
+.banner{
 	background: url(../img/home_page_banner.jpg) no-repeat;
 	width:960px;
 	height:452px;
@@ -459,6 +461,16 @@ a:hover, a:active, a:focus {
 	margin:30px 14px 0px 14px;
 	height:248px
 }
+
+.hp_box p{
+	padding:10px 40px 0 20px;
+	text-align: justify; text-justify: newspaper;
+}
+
+.hp_box_title{
+	margin-bottom:10px;
+}
+
 .hp_3box{
 	background:url(../img/hp_sbox.jpg) no-repeat top left;
 	float:left;
@@ -513,7 +525,7 @@ a:hover, a:active, a:focus {
 	font-size:13pt;
 	color:#FFF;
 	text-shadow: #194c70 0px 1px 2px;
-	font-weight:normal
+	font-weight:normal;
 }
 
 /** button styles **/
@@ -666,6 +678,41 @@ section.post h1:after{
 .pagefooter a.large_button{
 	float:right;
 }
+/** 404 **/
+
+section.dch-missing{
+	background:transparent url(../img/404b.png) no-repeat center;
+	position:relative;
+}
+
+section.dch-missing h2 {
+	text-align:center;
+	font-size:80px;
+	font-weight:bold;
+}
+
+section.dch-missing .bottom{
+	padding-top:500px;
+	text-align:center;
+}
+
+section.dch-missing .bottom h2{
+	font-size:40px;
+	font-weight:normal;	
+}
+
+section.dch-missing .bottom a.large_button{
+	display:block;
+	width:250px;
+	margin:50px auto;
+	padding:0;
+}
+
+section.dch-missing .bottom a.large_button span{
+	padding:10px 10px  10px 20px;
+	color:#80adcc;
+}
+
 
 /** calendar **/
 
@@ -697,4 +744,67 @@ a.cal-button:hover span{
 	border:1px solid #dbeaf3;
 	background:url(../img/enable_bullet.jpg) 8px center  no-repeat #FFF;
 	color:#3A7EB7;
+}
+
+#Panel .postings {
+	padding:20px;
+	float:none;
+	overflow:hidden;
+}
+
+#Panel .postings .a_detail{
+	width:500px;
+}
+
+/*------------------------------------------------------------------------*/
+/* Panel -----------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+/*Basic Style*/
+#Panel .box{
+	background:#f9fcfe;
+	border:5px solid #80adcc;
+	box-shadow:0px 0px 100px #000;
+	padding:0px;
+}
+
+#Panel .box .wrapper{
+	margin-top:auto;
+	padding:10px;
+}
+
+#Panel .modal{
+	background:#FFF;
+	opacity:.7;
+	cursor:pointer;
+}
+
+#Panel .closer{
+	position:absolute;
+	top:-25px;
+	right:-25px;
+	height:50px;
+	width:50px;
+	background: transparent;
+}
+
+#Panel .closer a{
+	cursor:pointer;
+	display:block;
+	height:50px;
+	width:50px;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	text-indent:-555px;
+	background: transparent url("../img/sprites_01.png") no-repeat -200px -400px;
+}
+
+#Panel .closer a:hover{
+	background-position-x:-250px
+}
+
+#Panel img.solo{
+	max-width:120000%;
+	border-radius:10px;
 }

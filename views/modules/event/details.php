@@ -2,6 +2,7 @@
 	$total = count($events);
 	$index = 0;
 ?>
+<div class="cal-agenda-list">
 <?php foreach( $events as $keys => $event ):?>
 				<div class="postings<?=(++$index==$total)?' last':''?>">
 					<div class="a_date">
@@ -27,3 +28,4 @@
 					</article>
             	</div>
 <?php endforeach;?>
+</div>

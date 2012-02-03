@@ -27,7 +27,7 @@
 				</div>
 				<div class="hp_cal_detail">
 					{{name}}
-					<a href="<?=base_url()?>event/details/{{id}}" class="normal_btn"><span>Find out more</span></a>
+					<a href="<?=base_url()?>event/details/{{id}}" target="panel" class="normal_btn"><span>Find out more</span></a>
 				</div>
 		</div>
 		{{ /event:get}}
@@ -35,8 +35,7 @@
 		<script>
 			jQuery('.hp_cal_box').mouseenter(function(){
 				jQuery(this).addClass('over');
-			});
-			jQuery('.hp_cal_box').mouseleave(function(){
+			}).mouseleave(function(){
 				jQuery(this).removeClass('over');
 			});
 		</script>
@@ -50,35 +49,30 @@
     
     <div class="hp_boxes">
         <div class="hp_box" style="margin-left:0px">
-            <div class="hp_box_text1">
+            <div class="hp_box_title hp_box_text1">
                 <h1 class="hp_box_heading"><strong>2012 Giving</strong></h1>
                 <span class="hp_box_text3">Priorities/Opportunities</span>
             </div>
-            <div class="hp_box_text2">The 15th annual "BBQ & Blue Jeans" 
-            community event to benefit the DCH Help & Hope Fund</div>
-            <div class="hp_box_text4">Fundraising Goal – <strong>$85,000</strong>
-            <a href="#"><div class="find_out_more_dis_btn">Find out more</div></a>
-            </div>
+            <p>The 15th annual "BBQ & Blue Jeans"
+            community event to benefit the DCH Help & Hope Fund</p>
+            <p>Fundraising Goal – <strong>$85,000</strong></p>
+			<p><a class="normal_btn" href="#"><span>Find out more</span></a></p>
         </div>
+        
         <div class="hp_box">
-            <div class="hp_box_text7">
+            <div class="hp_box_title hp_box_text7">
                 <h1 class="hp_box_heading">Our <strong>Donor Spotlight</strong></h1>
             </div>
-            <div class="hp_box_text2">The 15th annual "BBQ & Blue Jeans" 
-            community event to benefit the DCH Help & Hope Fund</div>
-            <div class="hp_box_text4">Fundraising Goal – <strong>$85,000</strong>
-            <a href="#"><div class="find_out_more_dis_btn">Find out more</div></a>
-            </div>
+            <p>DCH Foundation was awarded $100,000 grant from the disaster relief fund established by the West Alabama Chamber Foundation, Inc. after the tornadoes of April, 2011.</p>
+			<p><a class="normal_btn" href="#"><span>Find out more</span></a></p>
         </div>
-        <div class="hp_3box" style=" border-right:none;">
-            <div class="hp_box_text8">
+        
+        <div class="hp_box hp_3box" style=" border-right:none;">
+            <div class="hp_box_title hp_box_text8">
                 <h1 class="hp_box_heading">Join the <strong>Cause</strong></h1>
             </div>
-            <div class="hp_box_text2">The 15th annual "BBQ & Blue Jeans" 
-            community event to benefit the DCH Help & Hope Fund</div>
-            <div class="hp_box_text4">Fundraising Goal – <strong>$85,000</strong>
-            <a href="#"><div class="find_out_more_dis_btn">Find out more</div></a>
-            </div>
+            <p>DCH receives donations from a variety of sources, including individuals, foundations and corporations.</p>
+			<p><a class="normal_btn" href="#"><span>Find out more</span></a></p>
         </div>
     </div>
     <div class="seprator"></div>

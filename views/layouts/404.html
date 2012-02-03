@@ -13,25 +13,26 @@
 			
 				<div class="content">
 					{{ theme:partial name="header" }}
-					
 					<div class="inner_body">
-						<section class="post clearfix dch-404">
+						<section class="post clearfix dch-missing">
 							<div class="pt_banner">	
 								<h3 class="pt_heading">ERROR <strong>404</strong></h3>
 								<div class="speedbar">
 									<nav>
 										<ul>
 											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
-										{{navigation:links group="about-us"}}
-											<li>l</li>
-											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
-										{{/navigation:links}}
 							            </ul>
 									</nav>
 								</div>
 							</div>
 							
-						    {{template:body}}
+							
+								<h2>We're sorry...</h2>
+								<div class="page-chunk bottom">
+									<h2>That page does not exist</h2>
+									<p><a class="large_button" href="<?=base_url()?>"><span>Return to the homepage</span></a></p>
+								</div>
+							
 						</section>
 					</div>
 				</div><!-- end .content -->
