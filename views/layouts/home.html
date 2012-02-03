@@ -33,17 +33,12 @@
 		</div>
 		{{ /event:get}}
 		
-		<script>
-			jQuery('.hp_cal_box').mouseenter(function(){
-				jQuery(this).addClass('over');
-			}).mouseleave(function(){
-				jQuery(this).removeClass('over');
-			});
-		</script>
-		
 		<div class="hp_cal_newsletter">
 			<div class="hp_cal_input">
-				<input name="newsletter" type="text" value="newsletter" class="hp_cal_text" /><a href="#">{{ theme:image file="signup_btn.jpg" width="67" height="28" alt="newsletter signup"}}</a>
+				<form id="Newsletter" action="http://thedchfoundation.us4.list-manage2.com/subscribe/post?u=33ded1e15c11cd45ebadc191d&amp;id=63ac4ebb2f" method="POST"/>
+					<input name="EMAIL" type="text" value="" class="hp_cal_text newslet-email" />
+					<button class="newsletter-submit">&nbsp;&nbsp;</button>
+				</form>
 			</div>
 		</div>
     </div>
@@ -78,14 +73,32 @@
     </div>
     <div class="seprator"></div>
   </div>
-     </div>
+</div>
      
-    <!-- end .content --></div>
+    <!-- end .content -->
+</div>
     
     {{ theme:partial name="footer" }} 
     
     <!-- end .grid --></div>
   <!-- end .container --></div>
- {{ template:metadata in="footer" }} 
+ {{ template:metadata in="footer" }}
+ <script type="text/javascript">
+	(function($){
+		$('#Newsletter').submit(function(){
+			if($('.newslet-email').val()==''){
+				$('.hp_cal_newsletter').animate({'opacity':'0'},250).animate({'opacity':'1'},250).animate({'opacity':'0'},250).animate({'opacity':'1'},250);
+				
+				return false;
+			}
+		});
+	})(jQuery)
+	
+	jQuery('.hp_cal_box').mouseenter(function(){
+		jQuery(this).addClass('over');
+	}).mouseleave(function(){
+		jQuery(this).removeClass('over');
+	});	
+</script>
 </body>
 </html>

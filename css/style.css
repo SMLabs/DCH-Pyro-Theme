@@ -38,17 +38,20 @@ a:hover, a:active, a:focus {
 	width: 100%;
 	margin: 0 auto;
 }
+
 .grid{
 	background:url(../img/top_bg.jpg) no-repeat center top;
 }
+
 .content {
 	width:964px;
 	margin:0 auto
 }
+
 .header{
 	height:155px;
 	position:relative
-	}
+}
 
 /** Default Theme **/
 .logo{
@@ -74,6 +77,7 @@ a:hover, a:active, a:focus {
 	top:22px;
 	right:7px
 }
+
 .sm-icons{
 	text-align:right;
 	line-height:18px;
@@ -235,6 +239,7 @@ a:hover, a:active, a:focus {
 	margin:0px 2px
 }
 
+/** Agenda **/
 .agenda-listing{
 	border-bottom:1px solid #c2dbe5;
 	padding-bottom:28px;
@@ -448,27 +453,44 @@ a:hover, a:active, a:focus {
 .hp_cal_newsletter{
 	background:url(../img/newsletter_signup.jpg) no-repeat;
 	width:285px;
-	height:113px;
-	float:left
+	height:120px;
+	float:left;
 }
+
+hp_cal_newsletter form{
+	margin:0;
+	padding:0;
+}
+
+.newsletter-submit{
+	background:url(../img/signup_btn.jpg);
+	width:67px;
+	height:28px;
+	border:none;
+	margin:-6px;
+	padding:0;
+	cursor:pointer;
+}
+
 .hp_cal_input{
 	margin:67px 0 0 35px;
 }
+
+
 .hp_cal_text{
-	float:left;
 	border:0;
 	color:#999;
 	height:27px;
-	line-height:24px;
-	padding:0px 5px
+	padding:0px 5px;
 }
+
 .hp_box{
 	background:url(../img/hp_sbox.jpg) no-repeat top left;
 	float:left;
 	border-right:1px dotted #c9c9c9;
 	width:311px;
 	margin:30px 14px 0px 14px;
-	height:248px
+	height:248px;
 }
 
 .hp_box p{
