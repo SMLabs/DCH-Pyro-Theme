@@ -862,10 +862,13 @@ a.cal-button:hover span{
 	text-shadow:1px 1px 0 #eaf9ff;
 	padding:3px 0 0 11px;
 	color:#428cca;
-	margin-top:1px
+	margin-top:1px;
+	margin-left:2px;
+	
 }
 .nl_button {
   *height:24px;
   *margin-top:0px;
   cursor:pointer /* IE */
+  margin-left:1px;
 }
