@@ -20,3 +20,10 @@ h1, h2, h3, h4{
 .speedbar ul{}
 .speedbar li{color:#f14cae;}
 .speedbar li a{color:#f14cae;}
+
+.page-chunk.default{
+	border-color:#f3c7e3;
+	border-bottom:none;
+	background:url('../img/p_break.png') no-repeat bottom;
+	padding-bottom:120px;
+}
