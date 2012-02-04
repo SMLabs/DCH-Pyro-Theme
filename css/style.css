@@ -678,13 +678,13 @@ section.post h1:after{
 	background:url('../img/hr_fade.png') no-repeat bottom center;
 }
 
-.pagefooter{
+.dch-history-footer{
 	clear:both;
 	overflow:hidden;
 	background:url('../img/hr_fade.png') no-repeat top center;
 }
 
-.pagefooter:before{
+.dch-history-footer:before{
 	clear:both;
 	content:'  ';
 	display:block;
@@ -692,15 +692,15 @@ section.post h1:after{
 	background:url('../img/hr_fade.png') no-repeat top center;
 }
 
-.pagefooter h2{
+.dch-history-footer h2{
 	font-weight:lighter;
 	float:left;
 	padding-top:10px;
 	font-size:18pt;
 }
-.pagefooter h2 strong{}
+.dch-history-footer h2 strong{}
 
-.pagefooter a.large_button{
+.dch-history-footer a.large_button{
 	float:right;
 }
 /** 404 **/
