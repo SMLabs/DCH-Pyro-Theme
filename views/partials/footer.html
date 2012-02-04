@@ -3,27 +3,26 @@
 	<div class="f_menu">
         <div class="fmenu_1">
             <div class="f_menu_1_title">ABOUT</div>
-            <div><a href="#">Staff</a></div>
-            <div><a href="#">Board of Directors</a></div>
-            <div><a href="#">History</a></div>
-            <div><a href="#">Recent</a></div>
-            <div><a href="#">Accomplishments</a></div>
+            {{navigation:links group="about_us"}}
+            <div><a href="{{url}}">{{title}}</a></div>
+			{{/navigation:links}}
         </div>
       <div class="fmenu_1">
             <div class="f_menu_1_title">JOIN THE CAUSE</div>
-            <div><a href="#">Third PartyTools</a></div>
-            <div><a href="#">Our Donor Spotlight</a></div>
-            <div><a href="#">Donate Form</a></div>
-        <div class="f_menu_1_title">EVENTS</div>
-            <div><a href="#">Past Events Gallery</a></div>
+            {{navigation:links group="join_the_cause"}}
+            <div><a href="{{url}}">{{title}}</a></div>
+			{{/navigation:links}}
+        	
+        	<div class="f_menu_1_title">EVENTS</div>
+        	{{navigation:links group="events"}}
+            <div><a href="{{url}}">{{title}}</a></div>
+			{{/navigation:links}}
       </div>
       <div class="fmenu_1">
             <div class="f_menu_1_title">PRESS</div>
-            <div><a href="#">Giving Opportunities</a></div>
-            <div><a href="#">Media Kit</a></div>
-            <div><a href="#">Customer service</a></div>
-            <div><a href="#">Terms of use</a></div>
-            <div><a href="#">Privacy policy</a></div>
+            {{navigation:links group="press"}}
+            <div><a href="{{url}}">{{title}}</a></div>
+			{{/navigation:links}}
       </div>
       
       <div class="fmenu_1">

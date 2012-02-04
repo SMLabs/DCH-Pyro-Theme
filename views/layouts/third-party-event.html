@@ -1,0 +1,91 @@
+<?php if($this->input->is_ajax_request()):?>
+<div class="live-content">
+	{{template:body}}
+</div>
+<?php else:?>
+<!-- 'HTML-style' HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{ theme:partial name="metadata" }}
+	</head>
+	
+	<body>
+		{{ template:metadata in="body" }}
+		<div class="container">
+	
+			<div class="grid">
+			
+				<div class="content">
+					{{ theme:partial name="header" }}
+					
+					<div class="inner_body">
+						<section class="post clearfix">
+							<div class="pt_banner">	
+								<h3 class="pt_heading">Join the <strong>Cause</strong></h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+											{{navigation:links group="join_the_cause"}}
+											<li>l</li>
+											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+											{{/navigation:links}}									
+							            </ul>
+									</nav>
+								</div>
+							</div>
+						    {{template:body}}
+				    		<div class="tpe-steps">
+								<ul class="step1">
+									{{navigation:links group="third_party_events"}}
+									<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+									{{/navigation:links}}
+								</ul>
+							</div>
+							
+							<div class="tpe-info">
+								<div class="loading">Loading...</div>
+								<div class="tpe-info-wrapper" style="display:none;">This is dummy content</div>
+							</div>
+							
+							<div class="tpe-nav">
+								<a href="previousstep#" class="normal_btn"><span>Previous</span></a>
+								<a href="nextstep#" class="normal_btn"><span>Next</span></a>
+							</div>
+							<script type="text/javascript">
+								(function($){$(document).ready(function(){
+									$('.tpe-steps a').click(function(e){
+										e.preventDefault();
+										var el = this;
+										$('.tpe-info-wrapper').slideUp(function(){
+											$('<div class="loading">Loading...</div>').appendTo('.tpe-info').fadeIn(250);
+											$('.tpe-info-wrapper').load(el.href,function(){
+												$('.tpe-info .loading').remove();
+												var elements = $('.tpe-steps a');
+												for(i=1 ; elements[(i-1)]!=el; i++)continue;
+												$('.tpe-steps ul').attr('class','step'+i);
+												$('.tpe-info-wrapper').slideDown();
+											});
+										});
+									});
+									
+									$('.tpe-info-wrapper').load($('.tpe-steps a')[0].href,function(){
+										$('.tpe-info .loading').remove();
+										$('.tpe-info-wrapper').slideDown();
+									});
+								});})(jQuery);
+							</script>
+						</section>
+					</div>
+				</div><!-- end .content -->
+				
+				{{ theme:partial name="footer" }}
+			    
+			</div><!-- end .grid -->
+		</div><!-- end .container -->
+		{{ template:metadata in="footer" }}
+		<div id="fb-root"></div>
+	</body>
+</html>
+<?php endif;?>
