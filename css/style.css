@@ -128,7 +128,7 @@ a:hover, a:active, a:focus {
 }
 
 .top_nav{
-	padding-top:62px;
+	padding-top:75px;
 }
 .top_nav ul{
 	list-style-type:none;
@@ -379,19 +379,11 @@ a:hover, a:active, a:focus {
 	line-height:13px
 }
 
-.banner{
-	background: url(../img/home_page_banner.jpg) no-repeat;
-	width:960px;
-	height:452px;
-	margin-top:11px
-}
-
 /** homepage **/
 
 .hp_cal{
 	border-top:1px solid #bee3f2;
 	margin:10px 0px;
-	float:left;
 	position:relative;
 }
 .hp_cal_box{
@@ -453,9 +445,8 @@ a:hover, a:active, a:focus {
 .hp_cal_newsletter{
 	background:url(../img/newsletter_signup.jpg) no-repeat;
 	width:285px;
-	/*height:120px;*/  /****Off by nauman **/
 	height:113px;
-	float:left;
+	float:right;
 }
 
 hp_cal_newsletter form{
@@ -474,7 +465,6 @@ hp_cal_newsletter form{
 }
 
 .hp_cal_input{
-	/*margin:67px 0 0 35px;*/ /****Off by nauman **/
 	margin:24px 0 0 31px;
 }
 
@@ -871,4 +861,115 @@ a.cal-button:hover span{
   *margin-top:0px;
   cursor:pointer /* IE */
   margin-left:1px;
+}
+
+/** Home **/
+
+.home-page header.header{
+	height:146px;
+}
+
+.home-page .logo{
+	position:absolute;
+	top:57px;
+}
+
+.home-page .logo a{
+	display:block;
+	width:183px;
+	height:73px;
+	background:url('../img/dchf_home_header_logo.png');
+}
+
+/* home slider */
+
+.hp-slider-holder{
+	background: url(../img/slider_bg.png) no-repeat;
+	width:961px;
+	height:452px;
+	overflow:hidden;
+}
+
+#slides {
+	width:942px;
+	height:378px;
+	margin:9px;
+	position:relative;
+	overflow:hidden;
+    border:1px solid #3a7eb7;
+}
+
+/* slider reset */
+#slides p{
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+#slides div.slide .slide-wrapper{
+	position:relative;
+}
+
+#slides div.slide h3{
+	position:absolute;
+	top:20px;
+	right:0px;
+	color:#0068b3;
+	font-size:24px;
+	font-weight:lighter;
+	padding:15px 75px;
+	background:rgba(255,255,255,.9);
+}
+
+#slides .slide{
+	width:942px;
+	height:378px;
+    margin:0;
+    padding:0;
+    position:relative;
+}
+
+#slides div.slide h3 strong{
+	font-weight:bold;
+}
+
+#slides div.slide a{
+	display:block;
+	position:absolute;
+	bottom:-60px;
+	right:0px;
+	padding:12px 75px;
+	background:#0068b3 url('../img/slider_cta_bg.jpg') no-repeat right center;
+	color:#FFF;
+	text-shadow: #194c70 0px 1px 2px;
+}
+
+#slides a.prev{
+	position:absolute;
+	top:175px;
+	left:20px;
+	display:block;
+	width:57px;
+	height:57px;
+	text-indent:-9999px;
+	background:url('../img/sprites_01.png') 0px -100px;
+	z-index:+999;
+}
+#slides a.prev:hover{
+	background-position-x:-57px;
+}
+
+#slides a.next{
+	position:absolute;
+	top:175px;
+	right:20px;
+	display:block;
+	width:57px;
+	height:57px;
+	text-indent:-9999px;
+	background:url('../img/sprites_01.png') -200px -100px;
+	z-index:+999;
+}
+#slides a.next:hover{
+	background-position-x:-257px;
 }
