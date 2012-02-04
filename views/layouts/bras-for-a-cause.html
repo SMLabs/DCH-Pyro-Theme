@@ -1,0 +1,47 @@
+<!-- 'HTML-style' HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{ theme:partial name="metadata" }}
+		{{ theme:css file="bfac.css" }}
+	</head>
+	
+	<body class="bfac">
+		{{ template:metadata in="body" }}
+		<div class="container">
+	
+			<div class="grid">
+			
+				<div class="content">
+					{{ theme:partial name="header" }}
+					
+					<div class="inner_body">
+						<section class="post clearfix">
+							<div class="pt_banner">	
+								<h3 class="pt_heading">Bras for <strong>a Cause</strong></h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+										{{navigation:links group="breast_cancer_awareness"}}
+											<li>l</li>
+											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+										{{/navigation:links}}
+							            </ul>
+									</nav>
+								</div>
+							</div>
+							
+						    {{template:body}}
+						</section>
+					</div>
+				</div><!-- end .content -->
+				
+				{{ theme:partial name="footer" }}
+			    
+			</div><!-- end .grid -->
+		</div><!-- end .container -->
+		{{ template:metadata in="footer" }}
+		<div id="fb-root"></div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+h1, h2, h3, h4{
+	font-family:"Open Sans";
+	font-weight:400;
+	color:#f14cae;
+}
+
+.pt_banner{
+	background:url(../img/b_banner.jpg) no-repeat;
+	width:960px;
+	height:396px;
+}
+.pt_heading{
+	color:#FFF;
+	font-size:21pt;
+	font-weight:600;
+	margin:38px 0px 0px 48px;
+	float:left
+}
+.speedbar{}
+.speedbar ul{}
+.speedbar li{color:#f14cae;}
+.speedbar li a{color:#f14cae;}
