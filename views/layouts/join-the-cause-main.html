@@ -34,26 +34,47 @@
 									</nav>
 								</div>
 							</div>
-
-						    <div class="">
-						    	{{pages:chunk id="9" name="feature"}}
+							
+							<h2><?=$this->_ci_cached_vars['page']->title?></h2>
+							
+						    <div class=" page-chunk jtc-top">
+						    	<div class="image"><img alt="join_the_cause_heart.png" class="pyro-image" src="http://thedchfoundation.org/files/thumb/43/361" /> </div>
+						    	<div class="copy">{{pages:chunk id="9" name="feature"}}</div>
 						    </div>
 						    
-						    <div class="priorities">
-							    <div class="cols-3 bord-dot-r">
-							    {{pages:chunk id="9" name="priority1"}}
+						    <div class="jtc-priorities">
+							    <div class="jtc-pri pri-1">
+							    	<div class="padd col-padd-right bord-dot-r">
+							    		<div class="jtc-pri-box">
+								    		<div class="jtc-pri-box-padd">
+									    		{{pages:chunk id="9" name="priority1"}}
+								    		</div>
+								    	</div>
+							    	</div>
 							    </div>
 							    
-							    <div class="cols-3">
-							    {{pages:chunk id="9" name="priority2"}}
+							    <div class="jtc-pri pri-2">
+							    	<div class="padd col-padd-right col-padd-left bord-dot-r">
+							    		<div class="jtc-pri-box">
+								    		<div class="jtc-pri-box-padd">
+									    		{{pages:chunk id="9" name="priority2"}}
+								    		</div>
+								    	</div>
+							    	</div>
 							    </div>
 							    
-							    <div class="cols-3 bord-dot-l">
-							    {{pages:chunk id="9" name="priority3"}}
+							    <div class="jtc-pri pri-3">
+							    	<div class="padd col-padd-left">
+							    		<div class="jtc-pri-box">
+								    		<div class="jtc-pri-box-padd">
+									    		{{pages:chunk id="9" name="priority3"}}
+								    		</div>
+								    	</div>
+							    	</div>
 							    </div>
 							</div>
 						    
-						    <div class="jaxnav jtc">
+						    <div class="jaxnav wtg">
 						    	<div class="jaxnav-steps">
 									<ul class="step1">
 										{{navigation:links group="ways_to_give"}}

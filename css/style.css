@@ -26,13 +26,6 @@ section h2{
 	padding-bottom:61px;
 }
 
-section .page-chunk h2{
-	padding: 0px;
-	margin: 0px;
-	background: transparent;
-	background-image: none;
-}
-
 a img {
 	border: none;
 }
@@ -623,6 +616,12 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 	box-sizing:border-box;
 }
 
+.page-chunk h2{
+	padding: 0px;
+	margin: 0px;
+	background-color: transparent;
+	background-image: none;
+}
 
 .page-chunk.default {
 	border-bottom: 1px solid #e4eff3;
@@ -634,8 +633,8 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 	padding:0 20px;
 }
 
-.page-chunk.bord-dot-r{border-right:1px dotted #c8c9cb;}
-.page-chunk.bord-dot-l{border-left:1px dotted #c8c9cb;}
+.bord-dot-r{border-right:1px dotted #c8c9cb;}
+.bord-dot-l{border-left:1px dotted #c8c9cb;}
 
 .page-chunk ul{
 	list-style:none;
@@ -1071,8 +1070,81 @@ a.cal-button:hover span{
 
 /** Join the Cause **/
 
-.priorities{
+
+.jtc-top {
+	overflow: hidden;
+	border-bottom: 1px solid #DFE8ED;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.jtc-top .image{
+	float:left;
+}
+
+.jtc-top .copy{
+	float:right;
+	width:560px;
+}
+
+.jtc-top .copy h2{
+	font-size:29px;
+}
+
+.jtc-top .copy h2 strong{
+	display:block;
+}
+
+.jtc-top .copy p{
+	font-size:18px;
+}
+
+.jtc-priorities{
 	overflow:hidden;
+}
+
+.jtc-pri .padd{padding:0;}
+.jtc-pri .col-padd-right{padding-right:25px;}
+.jtc-pri .col-padd-left{padding-left:25px;}
+
+.jtc-pri{
+	float:left;
+}
+
+.jtc-pri-box{
+	background:url('../img/priority_bucket.png') no-repeat center;
+	width:287px;
+	height:140px;
+	overflow:hidden;
+}
+
+.jtc-pri-box-padd{
+	padding:15px;
+}
+
+.jtc-pri-box h3{
+	font-weight:bold;
+	
+}
+
+.jtc-pri-box p{
+	font-size:13px;
+}
+
+.jtc-pri-box a:link, .jtc-pri-box a:visited{
+	color:#FFF !important;
+	text-shadow: #194c70 0px 1px 2px;
+}
+
+.jtc-pri-box p a{
+	display:block;
+	height:200px;
+}
+
+/** Ways To Give Box **/
+
+.jaxnav.wtg{
+	margin-top:50px;
 }
 
 .wtg .jaxnav-steps li{
@@ -1084,11 +1156,34 @@ a.cal-button:hover span{
 }
 
 .wtg .jaxnav-steps li a{
-	padding:11px 0;
+	padding:16px 0 26px 0;
+	margin:0 2px;
 	color:#fff;
 	display:block;
 	text-align:center;
+	background:url('../img/sprites_01.png') no-repeat 0 -500px;
 }
+
+.wtg .jaxnav-steps li.first a{
+	margin-left:0;
+}
+
+.wtg .jaxnav-steps li.last a{
+	margin-right:0;
+}
+
+.wtg .jaxnav-steps li a.current{
+	background-position-x:-238px;
+}
+
+/* wierd hack to get this working*/
+.wtg .live-content .wtg-header{
+	overflow:hidden;
+	height:1px;
+	visibility:hidden;
+}
+
+
 
 /** Our Donor Spotlight **/
 
@@ -1164,15 +1259,4 @@ a.cal-button:hover span{
 
 .live-content.third-party-event .page-chunk.information a.normal_btn span{
 	float:none;
-}
-
-/** Donation **/
-
-.give .page-chunk.default{
-	border-borttom:none;
-}
-
-section .page-chunk.donation-form{
-	padding-top:30px;
-	background:url('../img/hr_fade.png') no-repeat top center;
 }
