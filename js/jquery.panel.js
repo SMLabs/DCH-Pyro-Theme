@@ -5,7 +5,8 @@
 
 	var isNumber = function( value ) {
 		if ( typeof value == 'number' ) {
-			return true;	}
+			return true;
+		}
 
 		if ( typeof value != 'string' ) {
 			return false;
@@ -114,7 +115,7 @@
   		"selector":this.selector,
   		"usemodal":true,
   		"modalclose":true,
-  		"maxsize":1.01
+  		"maxsize":0.9
   	}
   	
   	var actions = {
@@ -351,7 +352,7 @@
   	}
   	
   	// Make It Happen
-  	this.click(function(e){
+  	this.live('click',function(e){
   		e.preventDefault();
   		loadPanel($(this).attr("href"));
   	});

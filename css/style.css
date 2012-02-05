@@ -19,6 +19,20 @@ h1, h2, h3, h4{
 	font-weight:400;
 	color:#86b2cf;
 }
+
+section h2{
+	background:url('../img/hr_fade.png') no-repeat bottom;
+	margin-bottom:0px;
+	padding-bottom:61px;
+}
+
+section .page-chunk h2{
+	padding: 0px;
+	margin: 0px;
+	background: transparent;
+	background-image: none;
+}
+
 a img {
 	border: none;
 }
@@ -604,6 +618,7 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 /** chunk styles **/
 .page-chunk{
 	font-size:12px;
+	font-weight:400;
 	padding:0 0px;
 	box-sizing:border-box;
 }
@@ -630,6 +645,10 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 	list-style:none;
 	padding-left:20px;
 	background:transparent url('../img/disable_bullet.jpg') no-repeat 0px 14px;
+}
+
+.page-chunk p{
+	font-size:14px;
 }
 
 /** column styles **/
@@ -975,7 +994,7 @@ a.cal-button:hover span{
 }
 
 /** Third Party Events **/
-.tpe-steps ul{
+.tpe .jaxnav-steps ul{
 	padding:0;
 	display:block;
 	height:45px;
@@ -984,14 +1003,18 @@ a.cal-button:hover span{
 	
 }
 
-.tpe-steps ul.step1{background-position-y:0;}
-.tpe-steps ul.step2{background-position-y:-45px;}
-.tpe-steps ul.step3{background-position-y:-90px;}
-.tpe-steps ul.step4{background-position-y:-135px;}
-.tpe-steps ul.step5{background-position-y:-180px;}
+.tpe .jaxnav-steps ul.step1{background-position-y:0;}
+.tpe .jaxnav-steps ul.step2{background-position-y:-45px;}
+.tpe .jaxnav-steps ul.step3{background-position-y:-90px;}
+.tpe .jaxnav-steps ul.step4{background-position-y:-135px;}
+.tpe .jaxnav-steps ul.step5{background-position-y:-180px;}
 
 
-.tpe-steps li{
+.tpe .jaxnav-info{
+	padding:20px 0;
+}
+
+.tpe .jaxnav-steps li{
 	display:block;
 	float:left;
 	width:20%;
@@ -999,25 +1022,157 @@ a.cal-button:hover span{
 	margin:0;
 }
 
-.tpe-steps li a{
+.tpe .jaxnav-steps li a{
 	padding:11px 0;
 	color:#fff;
-	display:block;
+	display:block; 
 	text-align:center;
 }
 
-.tpe-info{
-	padding:20px 0;
+.jaxnav-paging{
+	overflow:hidden;
+	padding-top:29px;
+	clear:both;
+	margin-top:40px;
+	background:url('../img/hr_fade.png') no-repeat top center;
 }
 
-.tpe-info .loading{
-	text-align:center;
+.jaxnav-paging a{
+	float:right;
+}
+
+.jaxnav-paging a:link span{
+	padding:15px 30px;
+	font-weight:400;
+	color:#7cacc8;
+	background:#fff  url('../img/arrows.png') no-repeat 15px 20px;
+}
+
+
+.jaxnav-paging a.jaxnav-prev{
+	margin-right:10px;
+}
+
+.jaxnav-paging a.jaxnav-next span{
+	padding-right:30px;
+	background-position-x:94px;
+	background-position-y:-29px;
 }
 
 .live-content .page-chunk{
 	overflow:hidden;
 }
 
-.tpe-nav{
+.jaxnav-info .loading{
+	text-align:center;
+}
+
+
+
+/** Join the Cause **/
+
+.priorities{
+	overflow:hidden;
+}
+
+.wtg .jaxnav-steps li{
+	display:block;
+	float:left;
+	width:25%;
+	padding:0;
+	margin:0;
+}
+
+.wtg .jaxnav-steps li a{
+	padding:11px 0;
+	color:#fff;
+	display:block;
+	text-align:center;
+}
+
+/** Our Donor Spotlight **/
+
+.page-chunk.donor{
+	overflow:hidden;
+	border-bottom:1px solid #e4eff3;
+	margin-bottom:30px;
+	padding-bottom:20px;
+}
+
+.page-chunk.donor h2{
+	padding-bottom:25px;
+	color:#3177b3;
+	font-size:18px;
+}
+
+.page-chunk.donor .donor{
+	float:left;
+	border:1px solid #c5d7e0;
+	
+}
+
+.page-chunk.donor .donor img{
+	float:left;
+	margin-bottom:-4px;
+	border:5px solid #e7eaef;
+}
+
+.page-chunk.donor .content{
+	float:right;
+	width:726px;
+	padding-top:0;
+	margin-top:0;
+}
+
+.page-chunk.donor .content p{
+	margin-top:0;
+	padding-top:0;
+}
+
+.page-chunk.donor .content a{
+	font-weight:bold;
+	color:#3177b3;
+}
+
+/** ways to give **/
+
+.live-content.third-party-event{
+	padding-top:18px;
+}
+
+.live-content.third-party-event h2{
 	display:none;
+}
+
+.live-content.third-party-event .page-chunk.image{
+	float:left;
+	padding:0 60px 60px;
+}
+
+.live-content.third-party-event .page-chunk.image p{
+	padding:0;
+	display:inline;
+}
+
+.live-content.third-party-event .page-chunk.information p{
+	padding-top:0;
+}
+
+.live-content.third-party-event .page-chunk.information em{
+	color:#3177b3;
+}
+
+.live-content.third-party-event .page-chunk.information a.normal_btn span{
+	float:none;
+}
+
+/** Donation **/
+
+.give .page-chunk.default{
+	border-borttom:none;
+}
+
+section .page-chunk.donation-form{
+	padding-top:30px;
+	background:url('../img/hr_fade.png') no-repeat top center;
 }

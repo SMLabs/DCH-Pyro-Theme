@@ -1,8 +1,7 @@
 <?php if($this->input->is_ajax_request()):?>
-<div class="live-content <?=$this->uri->segment(1)?> third-party-event <?=$this->_ci_cached_vars['page']->slug?>">
+<div class="live-content <?=$this->uri->segment(1)?>  <?=$this->_ci_cached_vars['page']->slug?>">
 	{{template:body}}
 </div>
-
 <?php else:?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,20 +26,37 @@
 									<nav>
 										<ul>
 											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
-											{{navigation:links group="join_the_cause"}}
+										{{navigation:links group="join_the_cause"}}
 											<li>l</li>
 											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
-											{{/navigation:links}}									
+										{{/navigation:links}}									
 							            </ul>
 									</nav>
 								</div>
 							</div>
-						    {{template:body}}
+
+						    <div class="">
+						    	{{pages:chunk id="9" name="feature"}}
+						    </div>
 						    
-						    <div class="jaxnav tpe">
+						    <div class="priorities">
+							    <div class="cols-3 bord-dot-r">
+							    {{pages:chunk id="9" name="priority1"}}
+							    </div>
+							    
+							    <div class="cols-3">
+							    {{pages:chunk id="9" name="priority2"}}
+							    </div>
+							    
+							    <div class="cols-3 bord-dot-l">
+							    {{pages:chunk id="9" name="priority3"}}
+							    </div>
+							</div>
+						    
+						    <div class="jaxnav jtc">
 						    	<div class="jaxnav-steps">
 									<ul class="step1">
-										{{navigation:links group="third_party_events"}}
+										{{navigation:links group="ways_to_give"}}
 										<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
 										{{/navigation:links}}
 									</ul>
@@ -88,6 +104,9 @@
 									
 								});})(jQuery);
 							</script>
+						    
+						    {{pages:chunk id="9" name="donor-spotlight"}}
+						    
 						</section>
 					</div>
 				</div><!-- end .content -->

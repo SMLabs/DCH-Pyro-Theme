@@ -1,5 +1,5 @@
 <?php if($this->input->is_ajax_request()):?>
-<div class="live-content <?=$this->uri->segment(1)?>  <?=$this->_ci_cached_vars['page']->slug?>">
+<div class="live-content">
 	{{template:body}}
 </div>
 <?php else:?>
@@ -9,7 +9,7 @@
 		{{ theme:partial name="metadata" }}
 	</head>
 	
-	<body class="<?=$this->uri->segment(1)?>  <?=$this->_ci_cached_vars['page']->slug?>">
+	<body>
 		{{ template:metadata in="body" }}
 		<div class="container">
 	
@@ -21,12 +21,12 @@
 					<div class="inner_body">
 						<section class="post clearfix">
 							<div class="pt_banner">	
-								<h3 class="pt_heading">Join the <strong>Cause</strong></h3>
+								<h3 class="pt_heading">Ways <strong>to Give</strong></h3>
 								<div class="speedbar">
 									<nav>
 										<ul>
 											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
-										{{navigation:links group="join_the_cause"}}
+										{{navigation:links group="ways_to_give"}}
 											<li>l</li>
 											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
 										{{/navigation:links}}									
