@@ -76,11 +76,13 @@
 						    
 						    <div class="jaxnav wtg">
 						    	<div class="jaxnav-steps">
-									<ul class="step1">
+									<div class="jaxnav-nav-wrapper">
+									<ul>
 										{{navigation:links group="ways_to_give"}}
 										<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
 										{{/navigation:links}}
 									</ul>
+									</div>
 								</div>
 								
 								<div class="jaxnav-info">
@@ -123,10 +125,19 @@
 										$('.jaxnav .current').parents('li').prev().find('a').trigger('click');
 									});
 									
+									$(window).scroll(function(){
+											(document.body.scrollTop >= $('.jaxnav-steps').position().top) ?
+											$('.jaxnav').addClass('below') : $('.jaxnav').removeClass('below');
+									})
+									
 								});})(jQuery);
 							</script>
 						    
-						    {{pages:chunk id="9" name="donor-spotlight"}}
+							<div class="jtc-bottom-wrapper">
+								<div class="jtc-bottom">
+									{{pages:chunk id="9" name="donor-spotlight"}}
+								</div>
+							</div>
 						    
 						</section>
 					</div>

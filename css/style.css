@@ -1176,6 +1176,10 @@ a.cal-button:hover span{
 	background-position-x:-238px;
 }
 
+.wtg .jaxnav-paging{
+	display:none;
+}
+
 /* wierd hack to get this working*/
 .wtg .live-content .wtg-header{
 	overflow:hidden;
@@ -1183,7 +1187,39 @@ a.cal-button:hover span{
 	visibility:hidden;
 }
 
+.jtc-bottom-wrapper p{
+	color:#315C80;
+}
 
+.jtc-bottom-wrapper a{
+	color:#315C80;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.jaxnav-steps{
+	overflow:hidden;
+}
+
+.jaxnav.wtg.below .jaxnav-steps{
+	height:72px;
+}
+
+.jaxnav.below .jaxnav-nav-wrapper{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#F9FCFE;
+	box-shadow:0px 1px 40.5px rgba(0,0,0,.5);
+}
+.jaxnav.below .jaxnav-nav-wrapper ul{
+	width:964px;
+	margin:0 auto;
+	overflow:hidden;
+	padding-right:0;
+	padding-left:0;
+}
 
 /** Our Donor Spotlight **/
 
