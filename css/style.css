@@ -201,7 +201,7 @@ a:hover, a:active, a:focus {
 	color:#286dab
 }
 .speedbar li a:hover{
-	color:#000
+	color:white;
 }
 .inner_body{
 }
