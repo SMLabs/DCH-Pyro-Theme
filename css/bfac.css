@@ -27,3 +27,12 @@ h1, h2, h3, h4{
 	background:url('../img/p_break.png') no-repeat bottom;
 	padding-bottom:120px;
 }
+
+p.instruct{
+	position:relative;
+	opacity:1;
+	visibility:visible;
+	overflow:hidden;
+	width:auto;
+	height:auto;
+}
