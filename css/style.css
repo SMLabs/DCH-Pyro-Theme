@@ -793,6 +793,7 @@ a.cal-button:hover span{
 	padding:20px;
 	float:none;
 	overflow:hidden;
+	width:840px;
 }
 
 #Panel .agenda-listing .agenda-details{
@@ -850,6 +851,10 @@ a.cal-button:hover span{
 #Panel img.solo{
 	max-width:120000%;
 	border-radius:10px;
+}
+
+#Panel .content{
+	width:auto;
 }
 
 .hp_cal_text01{
