@@ -789,15 +789,20 @@ a.cal-button:hover span{
 	color:#3A7EB7;
 }
 
-#Panel .agenda-listing {
+#Panel .cal-agenda-list {
 	padding:20px;
 	float:none;
 	overflow:hidden;
 	width:840px;
 }
 
+#Panel .agenda-listing {
+	overflow:hidden;
+}
+
 #Panel .agenda-listing .agenda-details{
 	width:500px;
+	float:right;
 }
 
 /*------------------------------------------------------------------------*/
@@ -855,6 +860,7 @@ a.cal-button:hover span{
 
 #Panel .content{
 	width:auto;
+	overflow:hidden;
 }
 
 .hp_cal_text01{
