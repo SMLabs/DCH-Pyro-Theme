@@ -1,3 +1,6 @@
+{{theme:partial name="blog_content_head"}}
+{{ widgets:area slug="blog-sidebar" }}
+
 <div class="blog_post">
 	<!-- Post heading -->
 	<div class="post_heading">
