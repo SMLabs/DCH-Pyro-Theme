@@ -1,25 +1,7 @@
-<<<<<<< .mine<!-- theme header -->
-<div class="pt_banner">
-	<h3 class="pt_heading">DCH Blog</h3>
-	<div class="speedbar">
-		<nav>
-			<ul>
-				<li><a href="<?=site_url()?>">RSS Feed</a></li>
-			{{navigation:links group="events"}}
-                <li>l</li>
-				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
-			{{/navigation:links}}
-			
-            </ul>
-		</nav>
-	</div>
-</div>
-<!-- theme header -->
-
-======={{theme:partial name="blog_content_head"}}
+{{theme:partial name="blog_content_head"}}
 {{ widgets:area slug="blog-sidebar" }}
 
->>>>>>> .theirs<div class="blog_post">
+<div class="blog_post">
 	<!-- Post heading -->
 	<div class="post_heading">
 		<h4><?php echo $post->title; ?></h4>
