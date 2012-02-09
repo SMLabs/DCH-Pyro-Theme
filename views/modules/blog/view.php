@@ -1,9 +1,27 @@
+<!-- theme header -->
+<div class="pt_banner">
+	<h3 class="pt_heading">DCH Blog</h3>
+	<div class="speedbar">
+		<nav>
+			<ul>
+				<li><a href="<?=site_url()?>">RSS Feed</a></li>
+			{{navigation:links group="events"}}
+                <li>l</li>
+				<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+			{{/navigation:links}}
+			
+            </ul>
+		</nav>
+	</div>
+</div>
+<!-- theme header -->
+
 <div class="blog_post">
 	<!-- Post heading -->
 	<div class="post_heading">
 		<h4><?php echo $post->title; ?></h4>
 		<?php if (isset($post->display_name)): ?>
-		<p class="author"><?php echo lang('blog_written_by_label'); ?>: <?php echo anchor('user/' . $post->author_id, $post->display_name); ?></p>
+		<p class="author"><?php echo lang('blog_written_by_label'); ?>Hello: <?php echo anchor('user/' . $post->author_id, $post->display_name); ?></p>
 		<?php endif; ?>
 		<p class="post_date"><span class="post_date_label"><?php echo lang('blog_posted_label');?>: </span><?php echo format_date($post->created_on); ?></p>
 		<?php if($post->category->slug): ?>
