@@ -60,6 +60,9 @@ a:hover, a:active, a:focus {
 	position:relative
 }
 
+.clear{ clear:both;}
+.clear5{ clear:both; height:5px;}
+.clear10{ clear:both; height:10px;}
 /** Default Theme **/
 .logo{
 	position:absolute;
@@ -327,6 +330,111 @@ a:hover, a:active, a:focus {
 .agenda-view-buttons{
 	padding:15px 0px
 }
+
+/**Blog css**/
+#blog_sidebar_widgets{ 
+    float: left;
+    overflow: hidden;
+    padding-bottom: 23px;
+    width: 305px;	
+}
+#blog_sidebar_widgets .widget{ margin-bottom:20px;}
+#blog_sidebar_widgets ul{padding:0px; margin-top:-10px;}
+#blog_sidebar_widgets h3{ 
+	background:url("../img/rightside_title_line.jpg") no-repeat scroll center bottom transparent;
+    color: #86B2CF;
+    font-size: 17pt;
+    height: 30px;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+#blog_sidebar_widgets  .archive li a {color:#2970AE; font-weight: 600;}
+#blog_sidebar_widgets  .latest_posts li a { font-weight:bold; font-size:10pt; color:#7B858E;}
+
+#blog_sidebar_widgets .blog_categories li{
+    border-bottom: 1px solid #E4EFF5;	
+	padding:5px 25px;
+	background:url(../img/disable_bullet.jpg) no-repeat left center;
+}
+#blog_sidebar_widgets .blog_categories li a{
+color:#2970AE;
+font-weight:600;
+font-size:10pt;
+}
+#blog_sidebar_widgets li{
+    border-bottom: 1px solid #C2DBE5;	
+	padding:5px 0px;
+}
+
+#blog_main{
+    float: left;
+    overflow: hidden;
+    padding-right: 20px;
+    width: 626px;
+}
+
+#blog_main .post_heading{
+    border-bottom: 1px solid #C2DBE5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#blog_main .post_heading .post_title{
+	margin: 0 0 10px; padding:0; background:none;
+}
+#blog_main .post_heading .post_title a{
+	font-size:17pt;
+	color:#86B2CF;
+}
+
+#blog_main .post_heading_other{
+    border-bottom: 1px solid #C2DBE5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+
+#blog_main .post_heading_other .post_title_other{
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 16px;
+    margin-top: 6px;
+    padding: 0;
+	color:#7B858E;
+}
+	
+#blog_sidebar_widgets .first{ 
+    background: url("../img/a_date_end.jpg") no-repeat scroll left bottom transparent;
+}
+
+#blog_main .author a{ 
+	color: #3A7EB7;
+    font-weight: bold;
+	float:left;
+	font-size:12px;
+}
+#blog_main  .post_date{
+	float:left;
+	font-size:11px;
+	color:#7B858E;
+}
+
+#blog_main .post_body img{
+ border: 5px solid #E7EBEE;
+}
+#blog_main .blog_post{ padding:10px 10px 30px 10px; margin-bottom:10px; background:#FFF url(../img/bottom_post.jpg) no-repeat bottom;}
+
+#blog_main .post_bottom{ margin-top:5px; height:28px;}
+#blog_main .post_tweet{float:left; border-right:1px dotted #C9C9C9;}
+#blog_main .post_like{float:left; margin-left:35px;}
+#blog_main .post_read_full{float:right;}
+#blog_main .post_read_full a{color: #3A7EB7;font-size: 11pt;font-weight: bold;}
+    
+/**Blog css end**/
+
 .orange_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #f3cfb8;
@@ -337,6 +445,19 @@ a:hover, a:active, a:focus {
 	float:left;
 	margin:0px 2px
 }
+.readmore_btn{
+    background: url("../img/disable_bullet.jpg") no-repeat scroll 7px 50% #FFFFFF;
+    border: 1px solid #DBEAF3;
+    color: #A7CBE5;
+    float: right;
+    font-size: 10pt;
+    font-weight: 600;
+    height: 15px;
+    margin: 0 0;
+    padding: 5px 0 9px 23px;
+    width: 98px;
+}
+
 .facebook_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #dbeaf3;
