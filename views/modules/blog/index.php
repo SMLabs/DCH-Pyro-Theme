@@ -24,7 +24,8 @@
 	</div>        
 	<?php }else{?>           
 		<div class="post_heading_other">
-			<h2 class="post_title_other"><?php echo $post->title; ?></h2><a href="<?php echo base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug; ?>"><div class="readmore_btn">Read more</div></a>
+        	
+			<h2 class="post_title_other"><?php echo $post->title; ?></h2><a href="<?php echo base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug; ?>" class="normal_btn" style="float:right;"><span>Read more</span></a>
 		</div>
 
     <?php }?>

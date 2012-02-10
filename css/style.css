@@ -341,17 +341,17 @@ a:hover, a:active, a:focus {
 
 #blog_sidebar_widgets h3{ 
 
-	background:url(../img/rightside_title_line.jpg) no-repeat scroll center 28px transparent;
+	background:url(../img/rightside_title_line.jpg) no-repeat scroll center 33px transparent;
     margin-bottom: 0px;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 	font-size:17pt;
-	color:#3A7EB7;
+	color:#86B2CF;
 
 }
 
 #blog_sidebar_widgets .blog_categories li{
-    border-bottom: 1px solid #C2DBE5;	
+    border-bottom: 1px solid #E4EFF5;	
 	padding:5px 20px;
 	background:url(../img/disable_bullet.jpg) no-repeat left center;
 }
@@ -379,7 +379,7 @@ a:hover, a:active, a:focus {
 }
 #blog_main .post_heading .post_title a{
 	font-size:17pt;
-	color:#3A7EB7;
+	color:#86B2CF;
 }
 
 #blog_main .post_heading_other{
@@ -412,6 +412,7 @@ a:hover, a:active, a:focus {
 #blog_main  .post_date{
 	float:left;
 	font-size:11px;
+	color:#7B858E;
 }
 
 #blog_main .post_body img{
