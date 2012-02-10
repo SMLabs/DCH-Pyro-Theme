@@ -1,5 +1,6 @@
 {{theme:partial name="blog_content_head"}}
-{{ widgets:area slug="blog-sidebar" }}
+
+<div id="blog_main">
 
 <h2 id="page_title"><?php echo lang('blog_tagged_label').': '.str_replace('-', ' ', $tag); ?></h2>
 <?php if (!empty($blog)): ?>
@@ -32,3 +33,5 @@
 <?php else: ?>
 	<p><?php echo lang('blog_currently_no_posts');?></p>
 <?php endif; ?>
+</div>
+{{theme:partial name="blog_sidebar"}}
