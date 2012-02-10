@@ -12,6 +12,13 @@
 		<div class="post_body">
 			<?php echo $post->intro; ?>
 		</div>
+        <div class="clear5"></div>
+        <div class="post_bottom">
+            <div class="post_tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo (base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug)  ?>">Tweet</a></div>
+            <div class="post_like"><div class="fb-like" data-href="<?php echo (base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug)  ?>" data-layout="button_count"  data-send="false" data-width="150" data-show-faces="false"></div></div>
+			<div class="post_read_full"><?php echo anchor('blog/' .date('Y/m', $post->created_on) .'/'. $post->slug, "Read Full Article"); ?></div>
+		</div>           
+		<div class="clear"></div>          
 	</div>
 <?php endforeach; ?>
 
