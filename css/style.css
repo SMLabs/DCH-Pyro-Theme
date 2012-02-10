@@ -60,6 +60,9 @@ a:hover, a:active, a:focus {
 	position:relative
 }
 
+.clear{ clear:both;}
+.clear5{ clear:both; height:5px;}
+.clear10{ clear:both; height:10px;}
 /** Default Theme **/
 .logo{
 	position:absolute;
@@ -327,6 +330,184 @@ a:hover, a:active, a:focus {
 .agenda-view-buttons{
 	padding:15px 0px
 }
+
+/**Blog css**/
+#blog_sidebar_widgets{ 
+    float: left;
+    overflow: hidden;
+    padding-bottom: 23px;
+    width: 305px;	
+}
+
+#blog_sidebar_widgets h3{ 
+
+	background:url(../img/hr_fade.png) no-repeat scroll center 33px transparent;
+    margin-bottom: 0px;
+    overflow: hidden;
+    padding-bottom: 10px;
+	font-size:17pt;
+	color:#3A7EB7;
+
+}
+
+#blog_sidebar_widgets .blog_categories li{
+    border-bottom: 1px solid #C2DBE5;	
+	padding:5px 20px;
+	background:url(../img/disable_bullet.jpg) no-repeat left center;
+}
+
+#blog_sidebar_widgets li{
+    border-bottom: 1px solid #C2DBE5;	
+	padding:5px 0px;
+}
+
+#blog_main{
+    float: left;
+    overflow: hidden;
+    padding-right: 20px;
+    width: 626px;
+}
+
+#blog_main .post_heading{
+    border-bottom: 1px solid #C2DBE5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+#blog_main .post_heading .post_title{
+	margin: 0 0 10px; padding:0; background:none;
+}
+#blog_main .post_heading .post_title a{
+	font-size:17pt;
+	color:#3A7EB7;
+}
+
+#blog_main .post_heading_other{
+    border-bottom: 1px solid #C2DBE5;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+
+#blog_main .post_heading_other .post_title_other{
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 16px;
+    margin-top: 6px;
+    padding: 0;
+	color:#7B858E;
+}
+	
+#blog_sidebar_widgets .first{ 
+    background: url("../img/a_date_end.jpg") no-repeat scroll left bottom transparent;
+}
+
+#blog_main .author a{ 
+	color: #3A7EB7;
+    font-weight: bold;
+	float:left;
+	font-size:12px;
+}
+#blog_main  .post_date{
+	float:left;
+	font-size:11px;
+}
+
+#blog_main .post_body img{
+ border: 5px solid #E7EBEE;
+}
+#blog_main .blog_post{ padding:10px 10px 30px 10px; margin-bottom:10px; background:#FFF url(../img/bottom_post.jpg) no-repeat bottom;}
+
+#blog_main .post_bottom{ margin-top:5px; height:28px;}
+#blog_main .post_tweet{float:left; border-right:1px dotted #C9C9C9;}
+#blog_main .post_like{float:left; margin-left:35px;}
+#blog_main .post_read_full{float:right;}
+#blog_main .post_read_full a{color: #3A7EB7;font-size: 11pt;font-weight: bold;}
+    
+	
+.blog-listing{
+	border-bottom:1px solid #c2dbe5;
+	padding-bottom:28px;
+	margin-bottom:40px;
+	overflow:hidden;
+}
+.blog-listing.last{
+	border-bottom:none;
+	margin-bottom:0px;
+	padding-bottom:10px;
+}
+
+.blog-date{
+	width:311px;
+	background:url(../img/a_date_end.jpg) no-repeat left bottom;
+	padding-bottom:23px;
+	float:left;
+	overflow:hidden;
+}
+
+.blog-date-wrapper{
+	width:208px;
+	background:#FFF url(../img/c_icon.jpg) 5px 7px no-repeat;
+	padding:0px 0px 20px 78px;
+	margin-left:0px
+}
+
+.blog-day{
+	font-size:11pt;
+	color:#7b858e
+}
+.blog-month{
+	font-size:13pt;
+	color:#7b858e;
+	line-height:30px;
+	font-weight:bold;
+}
+.blog-time{
+	font-size:11pt;
+	color:#7aabca;
+	font-weight:bold;
+	margin-left:-78px;
+	padding-left:78px;
+	border-bottom: 1px solid #c2dbe5;
+}
+.blog-details{
+	width:626px;
+	border-left:1px dotted #c9c9c9;
+	padding-left:20px;
+	float:right;
+	overflow:hidden;
+	
+}
+.blog-header{
+	font-weight:bold;
+	font-size:13pt;
+	color:#3A7EB7
+}
+.blog-listing p, .inner_body p,
+.inner_body ul{
+	padding:10px 0px;
+	color:#7b858e;
+	font-size:11pt
+}
+.blog-spon-heading, .blog-view-heading{
+	color:#3A7EB7;
+	font-size:13pt;
+	margin-top:10px;
+}
+
+.blog-spon-list{
+	color:#7b858e;
+	font-size:11pt;
+	font-weight:bold;
+	line-height:30px
+}
+
+.blog-view-buttons{
+	padding:15px 0px
+}
+/**Blog css end**/
+
 .orange_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #f3cfb8;
@@ -337,6 +518,19 @@ a:hover, a:active, a:focus {
 	float:left;
 	margin:0px 2px
 }
+.readmore_btn{
+    background: url("../img/disable_bullet.jpg") no-repeat scroll 7px 50% #FFFFFF;
+    border: 1px solid #DBEAF3;
+    color: #A7CBE5;
+    float: right;
+    font-size: 10pt;
+    font-weight: 600;
+    height: 15px;
+    margin: 0 0;
+    padding: 5px 0 9px 23px;
+    width: 98px;
+}
+
 .facebook_btn{
 	padding:3px 14px 3px 38px;
 	border:1px solid #dbeaf3;
