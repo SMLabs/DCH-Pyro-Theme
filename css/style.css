@@ -336,9 +336,10 @@ a:hover, a:active, a:focus {
     float: left;
     overflow: hidden;
     padding-bottom: 23px;
-    width: 305px;	
+    width: 305px;
+	margin-top:26px;	
 }
-#blog_sidebar_widgets .widget{ margin-bottom:20px;}
+#blog_sidebar_widgets .widget{ margin-bottom:30px;}
 #blog_sidebar_widgets ul{padding:0px; margin-top:-10px;}
 #blog_sidebar_widgets h3{ 
 	background:url("../img/rightside_title_line.jpg") no-repeat scroll center bottom transparent;
@@ -355,13 +356,17 @@ a:hover, a:active, a:focus {
 
 #blog_sidebar_widgets .blog_categories li{
     border-bottom: 1px solid #E4EFF5;	
-	padding:5px 25px;
-	background:url(../img/disable_bullet.jpg) no-repeat left center;
 }
 #blog_sidebar_widgets .blog_categories li a{
-color:#2970AE;
-font-weight:600;
-font-size:10pt;
+	color:#2970AE;
+	font-weight:600;
+	font-size:10pt;
+	padding:5px 25px;
+	background:url(../img/disable_bullet.jpg) no-repeat left center;
+	
+}
+#blog_sidebar_widgets .blog_categories li a:hover{
+	background:url(../img/enable_bullet.jpg) no-repeat left center;	
 }
 #blog_sidebar_widgets li{
     border-bottom: 1px solid #C2DBE5;	
@@ -393,14 +398,14 @@ font-size:10pt;
     border-bottom: 1px solid #C2DBE5;
     margin-bottom: 10px;
     overflow: hidden;
-    padding-bottom: 20px;
 
 }
 
 #blog_main .post_heading_other .post_title_other{
     background: none repeat scroll 0 0 transparent;
     float: left;
-    font-size: 16px;
+	font-size: 11pt;
+    font-weight: bold;
     margin-top: 6px;
     padding: 0;
 	color:#7B858E;
@@ -425,7 +430,7 @@ font-size:10pt;
 #blog_main .post_body img{
  border: 5px solid #E7EBEE;
 }
-#blog_main .blog_post{ padding:10px 10px 30px 10px; margin-bottom:10px; background:#FFF url(../img/bottom_post.jpg) no-repeat bottom;}
+#blog_main .blog_post{ padding:25px 30px; margin-bottom:25px; background:#FFF url(../img/bottom_post.jpg) no-repeat bottom;}
 
 #blog_main .post_bottom{ margin-top:5px; height:28px;}
 #blog_main .post_tweet{float:left; border-right:1px dotted #C9C9C9;}

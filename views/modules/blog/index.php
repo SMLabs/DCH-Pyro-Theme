@@ -22,10 +22,10 @@
 		</div>           
 		<div class="clear"></div>     
 	</div>        
-	<?php }else{?>           
+	<?php }else{?> 
+	    <?php if($k==1){ ?>	 <div class="post_heading_other"></div><?php } ?>
 		<div class="post_heading_other">
-        	
-			<h2 class="post_title_other"><?php echo $post->title; ?></h2><a href="<?php echo base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug; ?>" class="normal_btn" style="float:right;"><span>Read more</span></a>
+			<h2 class="post_title_other"><?php echo $post->title; ?></h2><a href="<?php echo base_url().'blog/' .date('Y/m', $post->created_on) .'/'. $post->slug; ?>" class="normal_btn" style="float:right; margin-top: -10px;"><span>Read more</span></a>
 		</div>
 
     <?php }?>
