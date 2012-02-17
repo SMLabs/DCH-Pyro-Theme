@@ -1,0 +1,134 @@
+<?php
+
+$pageid = $this->_ci_cached_vars['page']->id;
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{ theme:partial name="metadata" }}
+	</head>
+	
+	<body class="countact-us">
+		{{ template:metadata in="body" }}
+		<div class="container">
+	
+			<div class="grid">
+			
+				<div class="content">
+					{{ theme:partial name="header" }}
+					
+					<div class="inner_body">
+						<section class="post clearfix">
+							<div class="pt_banner">	
+								<h3 class="pt_heading">Contact <strong>Us</strong></h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+							            </ul>
+									</nav>
+								</div>
+							</div>
+							
+							<h2> Contact <strong>Form</strong></h2>
+							
+							<div class="contact-form">
+								<div class="form cols-60">
+									<p class="form-intro">Contact our <?=$this->_ci_cached_vars['page']->chunks[5]->body?> <?=$this->_ci_cached_vars['page']->chunks[4]->body?>, by filling out the form below.</p>
+									{{ contact:form 
+									    name = "text|required"
+									    email = "text|required|valid_email"
+									    phone = "text"
+									    company = "text"
+									    subject = "text|required"
+									    message = "textarea|required"
+									    button = "Send the Email!"
+									    template = "general-contact"
+									    lang = "en"
+									    to = "<?=$this->_ci_cached_vars['page']->chunks[7]->body?>"
+									    from = "general-contact@thedchfoundation.org"
+									    sent = "<div class='alert success'><p>Thanks for contacting The DCH Foundation, please feel free to call <?=$this->_ci_cached_vars['page']->chunks[5]->body?> at 205-759-7349 if you need us now</p></div>"
+									    error = "<div class='alert error'><p>Sorry. Your message could not be sent, please try again or call <?=$this->_ci_cached_vars['page']->chunks[5]->body?> at 205-759-7349</p></div>"
+									}}
+									    <div class="cols-2">
+									    	<div class="col-left col-pad">
+									    		<div class="field required">
+											    	<div class="field-pad">
+											    		<label>Name: <span>*</span></label>
+													    {{ name }}
+											    	</div>
+											    </div>
+											    
+											    <div class="field required">
+											    	<div class="field-pad">
+											    		<label>Email: <span>*</span></label>
+													    {{ email }}
+											    	</div>
+											    </div>
+											    
+											    <div class="field">
+											    	<div class="field-pad">
+											    		<label>Phone:</label>
+													    {{ phone }}
+											    	</div>
+											    </div>
+											    
+											    <div class="field">
+											    	<div class="field-pad">
+											    		<label>Company:</label>
+													    {{ company }}
+											    	</div>
+											    </div>
+											    
+											    <div class="field required">
+											    	<div class="field-pad">
+											    		<label>Subject: <span>*</span></label>
+													    {{ subject }}
+											    	</div>
+											    </div>
+									    	</div>
+									    </div>
+									    <div class="cols-2">
+									    	<div class="col-right col-pad">
+									    		<div class="field required">
+											    	<div class="field-pad">
+											    		<label>Message: <span>*</span></label>
+													    {{ message }}
+											    	</div>
+											    </div>
+									    	</div>	
+									    </div>						    
+									{{ /contact:form }}
+								</div>
+								<div class="address cols-40">
+									<div class="col-right col-pad">
+										<a class="map-btn" href=""><span>View Map</span></a>
+										<address>
+											<h3>Mailing Address</h3>
+											<?=$this->_ci_cached_vars['page']->chunks[0]->body?>
+										</address>
+										<address>
+											<h3>Physical Address</h3>
+											<?=$this->_ci_cached_vars['page']->chunks[1]->body?>
+										</address>
+										
+										<div class="numbers">
+											<div class="contact-tele"><span>T</span> <?=$this->_ci_cached_vars['page']->chunks[2]->body?></div>
+											<div class="contact-fax"><span>F</span> <?=$this->_ci_cached_vars['page']->chunks[3]->body?></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div><!-- end .content -->
+				
+				{{ theme:partial name="footer" }}
+			    
+			</div><!-- end .grid -->
+		</div><!-- end .container -->
+		{{ template:metadata in="footer" }}
+		<div id="fb-root"></div>
+	</body>
+</html>

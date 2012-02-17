@@ -801,6 +801,28 @@ a.normal_btn:hover span, .hp_cal_box.over a.normal_btn span{
 	box-sizing:border-box;
 }
 
+.cols-3x2{
+	width:66.6%;
+	float:left;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+
+.cols-60{
+	width:60%;
+	float:left;
+	overflow:hidden;
+	box-sizing:border-box;
+
+}
+
+.cols-40{
+	width:40%;
+	float:left;
+	overflow:hidden;
+	box-sizing:border-box;
+
+}
 /** page layouts style **/
 
 section{
@@ -1665,6 +1687,79 @@ section.staff-profile .profile-bottom .normal_btn span{
  	box-sizing:border-box;
  	background-color:#FFF;
  	color:#80adcc;
+}
+
+.contact-form p.form-intro{
+	color:#3177b3;
+	font-weight:100;
+	font-size:20px;
+	font-style:italic;
+	border-bottom:1px solid #dfe8ed;
+}
+
+.contact-form form{
+	padding-right:4%;
+}
+
+.contact-form .address{
+	padding-left:20px;
+}
+
+.contact-form .address address{
+	padding:10px 20px;
+	border-bottom:1px solid #dfe8ed;
+	font-style:normal;
+}
+
+.contact-form .address h3{
+	color:#3177b3;
+	margin-bottom:10px;
+}
+
+.contact-form .address address p{
+	margin:0;
+	padding:0;
+}
+
+.contact-form .map-btn{
+	display:block;
+	width:365px;
+	height:61px;
+	background:url('../img/contact_us_viewmap.png');
+	margin-bottom:10px;
+}
+.contact-form .map-btn span{
+	display:block;
+	width:100%;
+	text-indent:-100%;
+	overflow:hidden;
+}
+
+.contact-form .numbers{
+	overflow:hidden;
+	padding:20px 20px;
+}
+
+.contact-form .numbers div{
+	float:left;
+	overflow:hidden;
+}
+
+.contact-form .numbers div{
+	font-size:12px;
+	padding-right:5px;
+	color:#7B858E;
+}
+
+.contact-form .numbers div span{
+	float:left;
+	display:block;
+	margin-right:3px;
+	padding:0px 5px;
+	background:#a8cbe0;
+	color:#FFF;
+	font-size:12px;
+	border-radius:20px;
 }
 
 /** Message **/

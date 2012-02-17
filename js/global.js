@@ -18,8 +18,11 @@
 			$('#Newsletter').submit();
 		});		
 		
+		// Handle Alerts
 		$('.alert').delay(6000).slideUp();
-		
+		$('.alert .close').live('click',function(el){
+			$(this).parents('.alert').slideUp();
+		});
 	});
 
 })(jQuery);
