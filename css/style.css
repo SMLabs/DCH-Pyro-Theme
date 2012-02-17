@@ -1584,11 +1584,10 @@ section.staff-profile .profile-bottom{
 section.staff-profile .profile-bottom .normal_btn span{
 	padding:15px 25px 15px 40px;
 	background-image:url('../img/bullet_back.png');
-	background-position-x:14px
+	background-position-x:14px;
 }
 
 /** Contact Form **/
-
 .contact-form{
 	clear:both;
 	overflow:hidden;
@@ -1609,6 +1608,14 @@ section.staff-profile .profile-bottom .normal_btn span{
 
 .contact-form .col-pad{
 	padding:10px;
+}
+
+.contact-form .col-left{
+	padding-left:0;
+}
+
+.contact-form .col-right{
+	padding-right:0;
 }
 
 .contact-form .field input, .contact-form .field textarea{
@@ -1634,6 +1641,20 @@ section.staff-profile .profile-bottom .normal_btn span{
 	padding-top:5px;
 }
 
+.contact-form .field-pad{
+	position:relative;
+	overflow:hidden;
+}
+
+.contact-form div.error{
+	color:#F00;
+	font-size:12px;
+	position:absolute;
+	top:0;
+	right:0;
+	padding-top:5px;
+}
+
 .contact-form .contact-button input{
  	display:block;
  	float:right;
@@ -1645,8 +1666,8 @@ section.staff-profile .profile-bottom .normal_btn span{
  	background-color:#FFF;
  	color:#80adcc;
 }
-/** Message **/
 
+/** Message **/
 .message{
 	font-size:13px;
 }

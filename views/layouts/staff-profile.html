@@ -48,8 +48,8 @@ $message='';
 									<a class="phone"><span class="icon">&nbsp;&nbsp;</span><span class="chunk">{{pages:chunk id="<?=$page_id?>" name="phone"}}</span></a>
 								</div>
 								<div class="contact-hider" style="display:none;">
-									<p>Send <?=strip_tags($this->_ci_cached_vars['page']->title)?> an email using the contact form below.</p>
 									<div class="contact-form">
+										<p>Send <?=strip_tags($this->_ci_cached_vars['page']->title)?> an email using the contact form below.</p>
 										{{ contact:form 
 										    name = "text|required"
 										    email = "text|required|valid_email"
@@ -68,7 +68,7 @@ $message='';
 										}}
 											{{ staff }}
 										    <div class="cols-2">
-										    	<div class="col-pad">
+										    	<div class="col-left col-pad">
 										    		<div class="field required">
 												    	<div class="field-pad">
 												    		<label>Name: <span>*</span></label>
@@ -106,7 +106,7 @@ $message='';
 										    	</div>
 										    </div>
 										    <div class="cols-2">
-										    	<div class="col-pad">
+										    	<div class="col-right col-pad">
 										    		<div class="field required">
 												    	<div class="field-pad">
 												    		<label>Message: <span>*</span></label>
@@ -124,6 +124,13 @@ $message='';
 											$('.contact-hider').toggleClass('open')
 											$('.contact-hider').hasClass('open') ? $('.contact-hider').slideDown() : $('.contact-hider').slideUp();
 										})
+										
+										
+										if($('.contact-form form div.error').length>0){
+											$('.contact-hider').toggleClass('open')
+											$('.contact-hider').hasClass('open') ? $('.contact-hider').slideDown() : $('.contact-hider').slideUp();
+										}
+										
 									});})(jQuery);
 								</script>
 							</h2>
