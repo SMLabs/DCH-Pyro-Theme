@@ -1279,7 +1279,6 @@ a.cal-button:hover span{
 }
 
 /** Ways To Give Box **/
-
 .jaxnav.wtg{
 	margin-top:50px;
 }
@@ -1359,7 +1358,6 @@ a.cal-button:hover span{
 }
 
 /** Our Donor Spotlight **/
-
 .page-chunk.donor{
 	overflow:hidden;
 	border-bottom:1px solid #e4eff3;
@@ -1403,7 +1401,6 @@ a.cal-button:hover span{
 }
 
 /** ways to give **/
-
 .live-content.third-party-event{
 	padding-top:18px;
 }
@@ -1432,4 +1429,246 @@ a.cal-button:hover span{
 
 .live-content.third-party-event .page-chunk.information a.normal_btn span{
 	float:none;
+}
+
+/** Staff **/
+div.staff-portal-member {
+	width:33.33%;
+	float:left;
+	position:relative;
+	border-bottom:1px solid #e4eff3;
+	padding-bottom:20px;
+	margin-top:60px;
+}
+
+div.staff-portal-member .pic{
+	margin:0 0 20px 0;
+	padding:0;
+	position:relative;
+	display:block;
+	width:300px;
+}
+div.staff-portal-member .pic:after{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 14px;
+	left: auto;
+	right: 0px;
+	width: 290px;
+	height: 20px;
+	-webkit-box-shadow: 0 15px 10px rgba(48, 118, 178, 0.25);
+	-moz-box-shadow: 0 15px 10px rgba(48, 118, 178, 0.25);
+	box-shadow: 0 15px 10px rgba(48, 118, 178, .25);
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	transform: rotate(4deg);	
+}
+
+div.staff-portal-member .pic img{
+	box-sizing:border-box;
+	background:#e8ebf0;
+	width:300px;
+	padding:5px;
+	border:1px solid #c5dce5;
+}
+
+div.staff-portal-member h3{
+    color:#3377af;
+    font-size:18px;
+    font-weight:bold;   
+}
+
+div.staff-portal-member a,
+div.staff-portal-member a:link,
+div.staff-portal-member a:hover,
+div.staff-portal-member a:active{
+	color:inherit;
+}
+
+/** Staff Profiles **/
+section.staff-profile div.profile-pic{
+	float:right;
+	padding-left:20px;
+}
+
+section.staff-profile div.profile-pic img{
+	box-sizing:border-box;
+	background:#e8ebf0;
+	width:400px;
+	padding:5px;
+	border:1px solid #c5dce5;
+}
+section.staff-profile h2{
+	position:relative;
+}
+section.staff-profile h2 em{
+	font-size:18px;
+	display:block;
+    padding:0;
+    margin:0;
+    font-style:normal;
+    color:#86B2CF;
+}
+
+section.staff-profile .profile-contact{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size:14px;
+    font-weight:400;
+}
+section.staff-profile .profile-contact a{
+	float:right;
+	overflow:hidden;
+	display:block;
+}
+
+section.staff-profile .profile-contact a .icon{
+	display:block;
+	float:left;
+	width:57px;
+	height:57px;
+	background:transparent url('../img/sprites_01.png');
+}
+
+section.staff-profile .profile-contact a .chunk{
+	padding:18px 10px 0;
+	display:block;
+	float:left;
+	font-weight:100;
+	color:#7B858E;
+	font-size:12px;
+}
+
+
+section.staff-profile .profile-contact .email{
+	cursor:pointer;
+}
+
+section.staff-profile .profile-contact .email .chunk{
+	color:#3175ac;
+	font-weight:600;
+}
+
+section.staff-profile .profile-contact .email:hover .chunk{
+	text-decoration:underline;
+}
+
+section.staff-profile .profile-contact .phone .icon{
+	background-position-x: 0;
+	background-position-y: -200px;
+}
+
+section.staff-profile .profile-contact .email .icon{
+	background-position-x: -200px;
+	background-position-y: -200px;
+}
+
+section.staff-profile .profile-contact .email:hover .icon{
+	background-position-x: -257px;
+	background-position-y: -200px;
+}
+
+section.staff-profile .profile-content{
+	overflow:hidden;
+	border-bottom:1px solid #c5dce5;
+}
+
+section.staff-profile .profile-bottom{
+	padding:30px 0;
+}
+
+section.staff-profile .profile-bottom .normal_btn span{
+	padding:15px 25px 15px 40px;
+	background-image:url('../img/bullet_back.png');
+	background-position-x:14px
+}
+
+/** Contact Form **/
+
+.contact-form{
+	clear:both;
+	overflow:hidden;
+	font-size:14px;
+	font-weight:400;
+	padding-top:10px;
+}
+
+.contact-form .field label{
+	display:block;
+	color:#3177b3;
+	padding-top:5px;
+}
+
+.contact-form .field label span{
+	color:#F00;
+}
+
+.contact-form .col-pad{
+	padding:10px;
+}
+
+.contact-form .field input, .contact-form .field textarea{
+	border:1px solid #ddeaf3;
+	width:100%;
+	box-sizing: border-box;
+	padding:10px;
+	color:#80adcc;
+}
+
+.contact-form .field input:focused, .contact-form .field textarea{
+	border:1px solid #3177b3;
+}
+
+.contact-form .field textarea{
+ 	height:289px;
+}
+ 
+.contact-form .contact-button{
+ 	display:block;
+ 	overflow:hidden;
+ 	clear:both;
+	padding-top:5px;
+}
+
+.contact-form .contact-button input{
+ 	display:block;
+ 	float:right;
+ 	font-size:14px;
+ 	font-weight:100;
+ 	padding:10px 15px;
+ 	border:1px solid #ddeaf3;
+ 	box-sizing:border-box;
+ 	background-color:#FFF;
+ 	color:#80adcc;
+}
+/** Message **/
+
+.message{
+	font-size:13px;
+}
+
+.message .alert{
+    margin-bottom:24px;
+}
+
+.message p {
+	padding:40px 10px;
+	text-align:center;
+	background:#FFF;
+	color:inherit;
+	border:none;
+}
+
+.message .success{
+	border:1px solid #82b93a;
+	color:#82b93a;
+}
+
+.message .error{
+	border:1px solid #b63530;
+	color:#b63530;
 }

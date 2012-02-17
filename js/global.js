@@ -18,6 +18,8 @@
 			$('#Newsletter').submit();
 		});		
 		
+		$('.alert').delay(6000).slideUp();
+		
 	});
 
 })(jQuery);

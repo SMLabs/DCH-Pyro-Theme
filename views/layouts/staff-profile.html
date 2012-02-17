@@ -1,0 +1,156 @@
+<?php
+$page_id = $this->_ci_cached_vars['page']->id;
+
+//print_r($this->_ci_cached_vars['page']->chunks);
+
+$message='';
+!($message = $this->session->flashdata('success')) ? $message = $this->session->flashdata('error') : null;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{ theme:partial name="metadata" }}
+	</head>
+	
+	<body>
+		{{ template:metadata in="body" }}
+		<div class="container">
+	
+			<div class="grid">
+			
+				<div class="content">
+					{{ theme:partial name="header" }}
+					
+					<div class="inner_body">
+						<section class="post clearfix staff-profile">
+							
+							<div class="pt_banner">	
+								<h3 class="pt_heading">About <strong>Us</strong></h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+										{{navigation:links group="about_us"}}
+											<li>l</li>
+											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+										{{/navigation:links}}									
+							            </ul>
+									</nav>
+								</div>
+							</div>
+							
+							<h2>
+								<?=$this->_ci_cached_vars['page']->title?>
+								<em>{{pages:chunk id="<?=$page_id?>" name="position"}}</em>
+								<div class="profile-contact">
+									<a class="email"><span class="icon">&nbsp;&nbsp;</span><span class="chunk">Email Me</span></a>
+									<a class="phone"><span class="icon">&nbsp;&nbsp;</span><span class="chunk">{{pages:chunk id="<?=$page_id?>" name="phone"}}</span></a>
+								</div>
+								<div class="contact-hider" style="display:none;">
+									<p>Send <?=strip_tags($this->_ci_cached_vars['page']->title)?> an email using the contact form below.</p>
+									<div class="contact-form">
+										{{ contact:form 
+										    name = "text|required"
+										    email = "text|required|valid_email"
+										    phone = "text"
+										    company = "text"
+										    staff = "hidden|value=<?=strip_tags($this->_ci_cached_vars['page']->title)?>"
+										    subject = "text|required"
+										    message = "textarea|required"
+										    button = "Send the Email!"
+										    template = "staff-contact"
+										    lang = "en"
+										    to = "<?=$this->_ci_cached_vars['page']->chunks[4]->body?>"
+										    from = "staff-contact@thedchfoundation.org"
+										    sent = "<div class='alert success'><p>Thanks for contacting <?=strip_tags($this->_ci_cached_vars['page']->title)?>, If you need to contact this person immediately call <?=$this->_ci_cached_vars['page']->chunks[3]->body?></p></div>"
+										    error = "<div class='alert error'><p>Sorry. Your message could not be sent to <?=strip_tags($this->_ci_cached_vars['page']->title)?>. Please try again or call them at <?=$this->_ci_cached_vars['page']->chunks[3]->body?></p></div>"
+										}}
+											{{ staff }}
+										    <div class="cols-2">
+										    	<div class="col-pad">
+										    		<div class="field required">
+												    	<div class="field-pad">
+												    		<label>Name: <span>*</span></label>
+														    {{ name }}
+												    	</div>
+												    </div>
+												    
+												    <div class="field required">
+												    	<div class="field-pad">
+												    		<label>Email: <span>*</span></label>
+														    {{ email }}
+												    	</div>
+												    </div>
+												    
+												    <div class="field">
+												    	<div class="field-pad">
+												    		<label>Phone:</label>
+														    {{ phone }}
+												    	</div>
+												    </div>
+												    
+												    <div class="field">
+												    	<div class="field-pad">
+												    		<label>Company:</label>
+														    {{ company }}
+												    	</div>
+												    </div>
+												    
+												    <div class="field required">
+												    	<div class="field-pad">
+												    		<label>Subject: <span>*</span></label>
+														    {{ subject }}
+												    	</div>
+												    </div>
+										    	</div>
+										    </div>
+										    <div class="cols-2">
+										    	<div class="col-pad">
+										    		<div class="field required">
+												    	<div class="field-pad">
+												    		<label>Message: <span>*</span></label>
+														    {{ message }}
+												    	</div>
+												    </div>
+										    	</div>	
+										    </div>						    
+										{{ /contact:form }}
+									</div>
+								</div>
+								<script>
+									(function($){$(document).ready(function(){										
+										$('h2 .profile-contact .email').click(function(el){
+											$('.contact-hider').toggleClass('open')
+											$('.contact-hider').hasClass('open') ? $('.contact-hider').slideDown() : $('.contact-hider').slideUp();
+										})
+									});})(jQuery);
+								</script>
+							</h2>
+							
+							<div class="message"><?=$message?$message:''?></div>
+							
+							<div class="profile-content">
+								<div class="profile-pic">
+									{{pages:chunk id="<?=$page_id?>" name="profile-pic"}}
+								</div>
+								
+								<div class="profile-bio">
+									{{pages:chunk id="<?=$page_id?>" name="profile-bio"}}
+								</div>
+							</div>
+							<div class="profile-bottom">
+								<a class="normal_btn" href="{{iurl:base}}about-us/staff"><span>Back to Staff</span></a>
+							</div>
+						</section>
+					</div>
+				</div><!-- end .content -->
+				
+				{{ theme:partial name="footer" }}
+			    
+			</div><!-- end .grid -->
+		</div><!-- end .container -->
+		{{ template:metadata in="footer" }}
+		<div id="fb-root"></div>
+	</body>
+</html>
