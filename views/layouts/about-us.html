@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php if($this->input->is_ajax_request()):?>
+<div class="live-content <?=$this->_ci_cached_vars['page']->slug?>">
+	{{template:body}}
+</div>
+<?php else:?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		{{ theme:partial name="metadata" }}
@@ -43,3 +47,4 @@
 		<div id="fb-root"></div>
 	</body>
 </html>
+<?php endif;?>

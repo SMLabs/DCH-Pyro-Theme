@@ -1006,7 +1006,7 @@ a.cal-button:hover span{
 	border-radius:10px;
 }
 
-#Panel .content{
+#Panel div.content{
 	width:auto;
 	overflow:hidden;
 }
@@ -1760,6 +1760,16 @@ section.staff-profile .profile-bottom .normal_btn span{
 	color:#FFF;
 	font-size:12px;
 	border-radius:20px;
+}
+
+.live-content.map .page-chunk.map{
+	width:600px;
+	margin:0;
+	padding:0;
+	border-bottom:none;
+}
+.live-content.map h2{
+	display:none;
 }
 
 /** Message **/
