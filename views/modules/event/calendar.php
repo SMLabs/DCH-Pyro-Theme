@@ -34,7 +34,7 @@ $row_counter = 1;
 <!-- theme header -->
 
 <h1>
-Calender <strong>Month View</strong>
+Calendar <strong>Month View</strong>
 <div class="cal-options">
 	<a class="cal-button" href="<?php echo site_url($this->config->item('module_name') . '/agenda'); ?>"><span>Agenda View</span></a>
 </div>
