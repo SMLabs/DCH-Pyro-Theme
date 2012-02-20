@@ -1879,3 +1879,18 @@ section.staff-profile .profile-bottom .normal_btn span{
 	border:1px solid #b63530;
 	color:#b63530;
 }
+
+/** Board of Directors **/
+
+.bod h4{
+	color:#7B858E;
+	font-weight:600;
+	font-style:italic;
+	margin:10px 0 0 0;
+	font-size:14px;
+}
+
+.bod p{
+	margin:0;
+	padding:0;
+}
