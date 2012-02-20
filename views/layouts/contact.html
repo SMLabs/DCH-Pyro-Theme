@@ -2,6 +2,9 @@
 
 $pageid = $this->_ci_cached_vars['page']->id;
 
+$message='';
+!($message = $this->session->flashdata('success')) ? $message = $this->session->flashdata('error') : null;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +20,6 @@ $pageid = $this->_ci_cached_vars['page']->id;
 			
 				<div class="content">
 					{{ theme:partial name="header" }}
-					
 					<div class="inner_body">
 						<section class="post clearfix">
 							<div class="pt_banner">	
@@ -32,6 +34,8 @@ $pageid = $this->_ci_cached_vars['page']->id;
 							</div>
 							
 							<h2> Contact <strong>Form</strong></h2>
+							
+							<div class="message"><?=$message?$message:''?></div>
 							
 							<div class="contact-form">
 								<div class="form cols-60">
