@@ -1187,6 +1187,11 @@ a.cal-button:hover span{
 	text-align:center;
 }
 
+.third-party-app{
+	width:600px
+}
+
+
 .jaxnav-paging{
 	overflow:hidden;
 	padding-top:29px;
