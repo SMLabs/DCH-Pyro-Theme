@@ -1,0 +1,83 @@
+<?php
+	$page_id = $this->_ci_cached_vars['page']->id;
+
+?>
+<?php if($this->input->is_ajax_request()):?>
+<div class="live-content <?=$this->uri->segment(1)?>  <?=$this->_ci_cached_vars['page']->slug?>">
+	{{template:body}}
+</div>
+<?php else:?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{{ theme:partial name="metadata" }}
+	</head>
+	
+	<body class="<?=$this->uri->segment(1)?>  <?=$this->_ci_cached_vars['page']->slug?>">
+		{{ template:metadata in="body" }}
+		<div class="container">
+	
+			<div class="grid">
+			
+				<div class="content">
+					{{ theme:partial name="header" }}
+					
+					<div class="inner_body">
+						<section class="post clearfix">
+							<div class="pt_banner">	
+								<h3 class="pt_heading">Press</h3>
+								<div class="speedbar">
+									<nav>
+										<ul>
+											<li><a href="<?=site_url()?>">Back to Homepage</a></li>
+										{{navigation:links group="press"}}
+											<li>l</li>
+											<li class="{{class}}"><a href="{{url}}">{{title}}</a></li>
+										{{/navigation:links}}									
+							            </ul>
+									</nav>
+								</div>
+							</div>
+							
+							<h2>Giving <strong>Priorities for <?=date('Y',strtotime('today'))?></strong></h2>
+							
+							<div class="priority-boxes">
+								<div class="priority-boxes-pad">
+								{{ pagez:children id="39" }}
+									<div class=" cols-3 page-chunk {{ slug }}">
+								    	<div class="priority-pad">
+									    	<div class="number"><span>&nbsp;&nbsp;</span></div>
+									    	<h3>{{ title }}</h3>
+									    	<div class="copy">{{ pages:chunk id="{{id}}" name="priorities-box" }}</div>
+									    	<a class="normal_btn" href="{{ pagez:url id="{{id}}" }}"><span>Find out more!</span></a>
+									    </div>
+								    </div>
+							    {{ /pagez:children }}									
+								</div>
+							</div>
+							
+							<h2 class="subhead">
+								<div class="subhead-pad">
+									{{ pages:chunk id="<?=$page_id?>" name="priority-title" }}
+								</div>
+							</h2>
+							
+							<div class="page-chunk priority-content">
+								<div class="page-chunk-pad">
+									{{ pages:chunk id="<?=$page_id?>" name="priority-content" }}
+								</div>
+							</div>
+													    
+						</section>
+					</div>
+				</div><!-- end .content -->
+				
+				{{ theme:partial name="footer" }}
+			    
+			</div><!-- end .grid -->
+		</div><!-- end .container -->
+		{{ template:metadata in="footer" }}
+		<div id="fb-root"></div>
+	</body>
+</html>
+<?php endif;?>
