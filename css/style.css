@@ -1895,30 +1895,30 @@ div.priority-one .priority-pad{margin:0 30px 0 0;}
 div.priority-two .priority-pad{margin:0 15px 0 15px;}
 div.priority-three .priority-pad{margin:0 0 0 30px;}
 
-div.priority-one .number{background-position-x:-200px;}
-div.priority-two .number{background-position-x:-300px;}
-div.priority-three .number{background-position-x:-400px;}
+div.priority-one .number{background-position:-200px -300px;}
+div.priority-two .number{background-position:-300px -300px;}
+div.priority-three .number{background-position:-400px -300px;}
 
 body.priority-one div.priority-one .priority-pad{
 	border-left:1px solid #7cacca;
 	border-top:1px solid #7cacca;
 	border-right:1px solid #7cacca;
 }
-body.priority-one div.priority-one .number{background-position-x:-242px;}
+body.priority-one div.priority-one .number{background-position:-242px -300px;}
 
 body.priority-two div.priority-two .priority-pad{
 	border-left:1px solid #7cacca;
 	border-top:1px solid #7cacca;
 	border-right:1px solid #7cacca;
 }
-body.priority-two div.priority-two .number{background-position-x:-342px;}
+body.priority-two div.priority-two .number{background-position:-342px -300px;}
 
 body.priority-three div.priority-three .priority-pad{
 	border-left:1px solid #7cacca;
 	border-top:1px solid #7cacca;
 	border-right:1px solid #7cacca;
 }
-body.priority-three div.priority-three .number{background-position-x:-442px;}
+body.priority-three div.priority-three .number{background-position:-442px -300px;}
 
 
 h2.subhead{
