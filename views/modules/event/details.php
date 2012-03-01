@@ -20,7 +20,7 @@
 	$total = count($events);
 	$index = 0;
 ?>
-<?php foreach( $events as $keys => $event ):?>
+<?php foreach( $events as $index => $event ):?>
 				<div class="agenda-listing<?=(++$index==$total)?' last':''?>">
 					<div class="agenda-date">
 						<div class="agenda-date-wrapper">
@@ -29,19 +29,37 @@
 							<div class="agenda-time"><?=Time24hFormat_Into_AMPMTime($event->start_time)?> - <?= Time24hFormat_Into_AMPMTime($event->end_time)?></div>
 						</div>
 					</div>
-						
+					
 					<article class="agenda-details">
 						<header><h2 class="agenda-header"><?=$event->name?> </h2></header>
 						<p>
 							<?=$event->description ?> 
-							<div class="agenda-spon-heading">Sponsors</div>
-							<div class="agenda-spon-list"><?=$event->sponsors?></div>
-							<div class="agenda-view-heading">View Event on:</div>
-							<div class="agenda-view-buttons">
-								<a href="<?=CheckHTTP_InURL($event->eventbrite_event_url)?>"><div class="orange_btn">Eventbrite</div></a>
-								<a href="<?=CheckHTTP_InURL($event->facebook_event_url)?>"><div class="facebook_btn">facebook</div></a>
-							</div>
+						
 						</p>
+						
+	<?php if(count($event->sponsors) > 0):?>
+						<div class="agenda-spon-heading">Sponsors</div>
+						<ul class="agenda-spon-list">
+		<?php foreach($event->sponsors as $sponsor):?>
+							<li>
+								<?php if($sponsors->url!=''):?>
+									<a href="<?=$sponsors->url?>"><span><?=$sponsors->name?></span></a>
+								<?php else:?>
+									<a><span><?=$sponsors->name?></span></a>								
+								<?php endif;?>
+							</li>
+		<?php endforeach;?>
+						</ul>
+	<?php endif;?>
+	<?php if(count($event->links) > 0):?>
+						<div class="agenda-view-heading">Event Links:</div>
+						<div class="agenda-view-buttons">
+		<?php foreach($event->links as $link):?>
+							<a class="<?=$link->type?>" href="<?=$link->url?>"><span><?=$link->text?></span></a>
+		<?php endforeach;?>
+						</div>
+	<?php endif;?>
+						
 					</article>
             	</div>
 <?php endforeach;?>
