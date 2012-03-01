@@ -2068,13 +2068,13 @@ h2.subhead .subhead-pad{
 
 a.agenda-event-link {
 	padding:6px 15px 6px 35px;
-	border:1px solid #dbeaf3;
-	background: #FFF url(../img/enable_bullet.jpg) 8px center  no-repeat;
+	background: transparent url(../img/enable_bullet.jpg) 8px center  no-repeat;
 	color:#3A7EB7;
-	font-weight:600;
-	font-size:11pt;
+	font-weight:400;
+	text-decoration:underline;
+	font-size:12px;
 	float:left;
-	margin:0px 2px
+	margin:3px 3px
 }
 
 a.agenda-event-link:hover {}
@@ -2082,55 +2082,37 @@ a.agenda-event-link:hover {}
 a.agenda-event-link.default {}
 
 a.agenda-event-link.facebook {
-	border:1px solid #3C5A98;
-	background: #FFF url(../img/btn_icon_facebook.png) 8px center  no-repeat;
-	color:#3C5A98;
+	background-image:url(../img/btn_icon_facebook.png);
 }
 
 a.agenda-event-link.eventbrite {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_eventbrite.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_eventbrite.png);
 }
 
 a.agenda-event-link.googleplus {
-	border:1px solid #999999;
-	background: #FFF url(../img/btn_icon_googleplus.png) 8px center  no-repeat;
-	color:#999999;
+	background-image: url(../img/btn_icon_googleplus.png);
 }
 
 a.agenda-event-link.youtube {
-	border:1px solid #f00;
-	background: #FFF url(../img/btn_icon_youtube.png) 8px center  no-repeat;
-	color:#f00;
+	background-image: url(../img/btn_icon_youtube.png);
 }
 
 a.agenda-event-link.mailchimp {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_mailchimp.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_mailchimp.png);
 }
 
 a.agenda-event-link.pintrest {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_pintrest.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_pintrest.png);
 }
 
 a.agenda-event-link.pdf {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_pdf.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_pdf.png);
 }
 
 a.agenda-event-link.gowalla {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_gowalla.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_gowalla.png);
 }
 
 a.agenda-event-link.foursquare {
-	border:1px solid #fb4f18;
-	background: #FFF url(../img/btn_icon_foursquare.png) 8px center  no-repeat;
-	color:#fb4f18;
+	background-image: url(../img/btn_icon_foursquare.png);
 }
