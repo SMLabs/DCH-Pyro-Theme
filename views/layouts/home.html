@@ -54,7 +54,7 @@
 				</div>
 				<div class="hp_cal_detail">
 					{{name}}
-					<a href="<?=base_url()?>event/details/{{id}}" target="panel" class="normal_btn"><span>Find out more</span></a>
+					<a href="<?=base_url()?>event/get_agenda/{{ helper:date format="Y-m-d" timestamp="{{timestamp}}"}}" target="panel" class="normal_btn"><span>Find out more</span></a>
 				</div>
 		</div>
 		{{ /event:get}}
