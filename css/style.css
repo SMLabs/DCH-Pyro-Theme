@@ -492,7 +492,7 @@ a:hover, a:active, a:focus {
 	border-left:1px solid #a6cbe2;
 	padding-left:14px;
 	font-size:10pt;
-	height:188px
+	min-height:200px
 }
 .f_menu_1_title{
 	padding:10px 0 10px 11px
