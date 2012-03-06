@@ -15,9 +15,9 @@
 
 <h1> Photos from <strong>Our Events</strong> </h1>
 
-<p>Many of our photo albums features pictures taken at our third party events. 
-Where are fortunate to work with many generous groups in our fund rasing initiatives. 
-To learn more about hosting third-party events, <a href="#">click here</a>.</p>
+<p>Many of our photo albums feature pictures taken at our third party events.
+We are fortunate to work with many generous groups in our fund rasing initiatives. 
+To learn more about hosting third-party events, <a href="<?=site_url('/join_the_cause/third_party_events')?>">click here</a>.</p>
 
 <section class="fbgal-section main">
 	<div class="fbgal-main-links">
