@@ -479,8 +479,9 @@ a:hover, a:active, a:focus {
 	margin:0px 2px
 }
 .footer{
-	background:url(../img/footer_bg.jpg) repeat-x;
-	height:262px;
+	background:#7babc7 url(../img/footer_bg.jpg) repeat-x bottom;
+	overflow:hidden;
+	padding-bottom:45px;
 	clear:both;
 }
 .fmenu_1 {
