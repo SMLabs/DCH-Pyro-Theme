@@ -2117,69 +2117,87 @@ a.agenda-event-link.foursquare {
 	background-image: url(../img/btn_icon_foursquare.png);
 }
 
-/** Facebook Gallery **/
+/*
+*****************************************************
+**
+** Facebook Gallery Style
+**
+*****************************************************
+*/
 
-#gallery_main{
-    border-bottom: 1px solid #C5DCE5;
+.fbgal-section.main{
+   /* border-bottom: 1px solid #C5DCE5; */
     overflow: hidden;
 }
 
-.gallery_right{
-    float: left !important;
-    overflow: hidden;
-    width: 530px !important;
-}
+/*
+ *
+ * Main Links
+ *
+ */
 
-.gallery_left{
+.fbgal-main-links{
     float: left;
     overflow: hidden;
     padding-right: 20px;
     width: 410px !important;
 }
 
-.gallery_left h3{
+.fbgal-main-links h3{
 	color: #86B2CF;
 	font-size: 17pt;
 	font-weight: 400;
 }
-.gallery_left li {
+
+.fbgal-main-links li {
 	line-height:2.7;
 }
-.gallery_left li a{
+
+.fbgal-main-links li a{
     color: #2970AE;
     font-size: 12pt;
     font-weight: 400;
     padding: 5px 0 5px 22px;
 	background:url(../img/disable_bullet.jpg) no-repeat left center;
-	
 }
-.gallery_left li a:hover{
+
+.fbgal-main-links li a:hover{
 	background:url(../img/enable_bullet.jpg)no-repeat left center;	
 }
 
-.gallery_right li{
+.fbgal-main-albums{
+    float: left !important;
+    overflow: hidden;
+    width: 530px !important;
+}
+
+.fbgal-section li.fbgal-thumb{
 	float:left;
 	text-align:center;
-	margin:0 22px 22px 0; 
+	margin:0 22px 22px 0;
 	width:210px;
 	height:210px;
 	list-style:none;
 	position:relative;
 }
-.gallery_right li a{
+
+.fbgal-section li.fbgal-thumb a{
     color: #2970AE;
     font-size: 12pt;
-    font-weight: 600;	
+    font-weight: 600;
 	width:218px;
 	display:block;
 }
-.gallery_right li a .img_div{
+
+.fbgal-section li.fbgal-thumb a .fbgal-thumb-overlay{
 	display:none;
 }
-.gallery_right li a .img_div .search_img{
+
+.fbgal-section li.fbgal-thumb a .fbgal-thumb-overlay .fbgal-zoom-img{
 	margin-top:50px;
 }
-.gallery_right li a:hover .img_div{
+
+.fbgal-section li.fbgal-thumb a:hover .fbgal-thumb-overlay{
     display: block;
     float: left;
     height: 150px;
@@ -2187,30 +2205,67 @@ a.agenda-event-link.foursquare {
     position: absolute;
     top: 5px;
     width: 211px;
-	background:url(../img/black-1px.png);
+	background-color: rgba(0,0,0,.5);
 }
 
+.fbgal-section li.fbgal-thumb .fbgal-thumb-photo{
+	border:5px solid #D9E9F0;
+	width:210px;
+	height:150px;
+}
 
-.gallery_right li .photo{
-border:5px solid #D9E9F0;
-width:210px;
-height:150px;
+.fbgal-main-footer {
+    padding: 8px 0;
 }
-#gallery_full{
-	width:960px;
+
+.fbgal-main-footer a{
+	float:left;
 }
-#gallery_full li{
+
+.fbgal-main-footer a span{
+	background-image:url(../img/bullet_back.png);
+}
+
+.fbgal-main-footer a:hover span{
+	background-image:url(../img/bullet_back.png);
+}
+
+/*
+ *
+ * Fbgallery Albums
+ *
+ */
+
+.fbgal-album-navigation{
+	overflow:hidden;
+	background: url('../img/hr_fade.png') no-repeat bottom;
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
+.fbgal-album-navigation .fbgal-album-back{
+	padding-top:11px;
+	float:left;
+}
+
+.fbgal-album-navigation .fbgal-album-back a span{
+	background-image:url(../img/bullet_back.png);	
+}
+
+.fbgal-section.album li{
 	margin: 0 30px 30px 0;
 	width:210px;
 	height:152px;
 	list-style:none;
 	position:relative;
 }
-.gallery_bottom {
-    padding: 30px 0;
-}
 
-/* Paging Buttons */
+/*
+ *
+ * Fbgallery Album Paging
+ *
+ */
+ 
 .fbgal-album-paging a span{
 	border:1px solid #dbeaf3;
     padding: 15px 25px 15px 40px;
@@ -2234,9 +2289,6 @@ height:150px;
 	margin:10px 0px
     padding: 15px 25px 15px 40px;
 }
-
-.flr{float:right;}
-.fll{float:left;}
 
 .fbgal-album-paging {
     background: none;
