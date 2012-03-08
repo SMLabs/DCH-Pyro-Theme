@@ -2042,16 +2042,62 @@ h2.subhead .subhead-pad{
 	display:block;
 }
 
+/*
+*****************************************************
+**
+** Press
+**
+*****************************************************
+*/
 
-/** 
- * EVENTS 
-**/
+
+section.press .page-chunk h2{
+	font-size:26px;
+	font-weight:600;
+	padding-bottom:20px;
+	margin-top:40px;
+}
+
+section.press .page-chunk h3{
+	color:#3177b3;
+	margin-bottom:20px;
+	font-weight:600;
+	
+}
+
+section.press .page-chunk ul,section.press .page-chunk li{
+	margin:0;padding:0 0 10px 0;
+}
+
+section.press .page-chunk li{
+	padding:10px 30px;
+	background-position: 10px center
+}
+
+
+section.press .page-chunk li a{
+	font-size:12px;
+	font-weight:600;
+	color:#666;
+}
+
+/*
+*****************************************************
+**
+** EVENTS
+**
+*****************************************************
+*/
 
 .agenda-section{
 	overflow:hidden;
 }
 
-/* agenda sponsors */
+/*
+ *
+ * Agenda Sponsors
+ *
+ */
 
 .agenda-spon-list, .agenda-spon-list li{
 	list-style:none;
