@@ -1,0 +1,186 @@
+body{
+	background-image:none;
+}
+
+.container{
+	position:relative;
+	width:810px;
+	margin:0 auto;
+	overflow:hidden;
+	background:#f9fcfe url('../img/fanapp_top_bg.jpg') repeat-x left top !important;
+}
+
+div.content.fbapp-content{
+	width:auto;
+}
+#Panel{
+	display:none;
+}
+
+.grid{
+	width:720px;
+	background-image:none;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+}
+
+.fb-logo{
+	margin-top:20px;
+	width:143px;
+	height:55px;
+	background:url('../img/fbapp_logo.png') no-repeat center;
+}
+
+hr{
+	height:29px;
+	background:url('../img/fbapp_hr.png') no-repeat center top;
+	border:none;
+	margin:5px 0;
+	display:block;
+	clear:both;
+}
+
+.fb-slider-holder{
+	width:702px;
+	height:279px;
+	border:10px solid #FFF;
+}
+
+#slides {
+	margin:-1px 0 0 -1px;
+	width:702px;
+	height:277px;
+	background-color:#fff;
+}
+
+#slides .slide{
+	width:702px;
+}
+
+#slides div.slide h3{
+	font-size:16px !important;
+	top:37px;
+}
+
+#slides div.slide h3 a{
+	font-size:16px !important;
+	bottom:-46px;
+	display:none;
+}
+
+#slides .slide img{
+	width:100%;
+}
+
+#slides a.next, #slides a.prev{
+	top:155px;
+}
+
+.fb-slider-footer{
+	width:720px;
+	height:22px;
+	background:url('../img/fbapp_slide_footer.png') no-repeat center top;
+}
+
+.dch-context{
+	text-align:center;
+	padding:0 0 40px 0;
+}
+
+.fbapp-facepile{
+	margin-top:30px;
+	padding:10px;
+	background:#FFF;
+	height:64px;
+}
+
+.cal-agenda-list{}
+
+.agenda-details{
+	width:388px;
+}
+
+.fbapp-links{
+	padding:30px;
+	width:651px;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.fbapp-links a span{
+	margin:5px !important;
+	font-size:14pt !important;
+	font-weight:400 !important;
+}
+
+.fbapp-admin-bar{
+	overflow:hidden;
+	padding-bottom:20px;
+	background:#FFF;
+}
+
+.fbapp-admin-bar a.admin-btn {
+	display:block;
+	float:right;
+	padding:3px 6px;
+	border:1px solid #a5a5a5;
+	background-color:#f7f8f9;
+	font-family:'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+	color:#333;
+	line-height:14px !important;
+	font-size:14px !important;
+	font-weight:600;
+	border-radius:3px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+.fbapp-admin-bar a.admin-btn  i{
+	width: 10px;
+	height: 14px;
+	line-height:14px !important;
+	font-size:14px !important;
+	margin-right:3px;
+	margin-top:3px;
+	margin-bottom:3px;
+	background-position: -145px -441px;
+	background-image: url(http://static.ak.fbcdn.net/rsrc.php/v1/y4/r/UVjH_L9sL7g.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.fbapp-admin-bar span{
+	padding-top:9px;
+	margin:0 !important;
+	line-height:16px !important;
+	float:left;
+	padding-right:3px;
+}
+
+.fbapp-admin-bar span.inactive{
+	color:#900;
+}
+
+.fbapp-admin-bar span.active{
+	color:#090;
+}
+
+
+.fbapp-deltails-left{
+	width:311px;
+	float:left;
+	overflow:hidden;
+}
+
+.agenda-time{
+	padding-bottom:30px;
+}
+
+.fbapp-deltails-left .agenda-links{
+	clear:left;
+}
+
+.agenda-details{
+	border-left:none;
+}
